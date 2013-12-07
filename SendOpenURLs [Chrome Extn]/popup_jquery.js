@@ -141,7 +141,14 @@ function SendGMail()
 
 function StripTheURL(url)
 {
-	var indStart = url.indexOf("--") + 3;
+	var dashdashindex = url.indexOf("--");
+	
+	if(dashdashindex == -1)
+	{
+		return url;
+	}
+	
+	var indStart = dashdashindex + 3;
 	var indEnd = url.length - indStart;
 	var desiredURL =  url.substr(indStart, indEnd);	
 	return desiredURL;
