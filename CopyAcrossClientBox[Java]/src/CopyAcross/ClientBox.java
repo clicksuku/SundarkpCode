@@ -37,8 +37,8 @@ public class ClientBox extends javax.swing.JFrame {
         initComponents();
         
         _sftpHost = "10.223.9.122";
-        _sftpUser = "symuser";
-        _sftpPwd = "symqa@123";
+        _sftpUser = "";
+        _sftpPwd = "";
         _sftpRemoteDirectory = "";   
         _sftpLocalFileDir = "";
         
@@ -96,11 +96,11 @@ public class ClientBox extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Copy Across Tool");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setName("MainPage");
+        setName("MainPage"); // NOI18N
         setResizable(false);
 
         SettingsPanel.setBackground(new java.awt.Color(177, 177, 244));
-        SettingsPanel.setName("Panel");
+        SettingsPanel.setName("Panel"); // NOI18N
         SettingsPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         SFTPServer.setText("10.223.9.122");
@@ -112,7 +112,6 @@ public class ClientBox extends javax.swing.JFrame {
         });
         SettingsPanel.add(SFTPServer, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 75, 133, -1));
 
-        UserName.setText("symuser");
         UserName.setToolTipText("User Name");
         UserName.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -129,8 +128,7 @@ public class ClientBox extends javax.swing.JFrame {
         });
         SettingsPanel.add(SetProps, new org.netbeans.lib.awtextra.AbsoluteConstraints(392, 75, -1, 58));
 
-        Password.setText("symqa@123");
-        Password.setToolTipText("symqa@123");
+        Password.setToolTipText("");
         SettingsPanel.add(Password, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 113, 133, -1));
 
         RemoteDir.setForeground(new java.awt.Color(191, 205, 219));
