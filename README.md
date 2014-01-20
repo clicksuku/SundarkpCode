@@ -7,7 +7,7 @@ This repository contains the utilities, which I wrote to address few problems I 
 
   + CopyAcrossClientbox (JAVA)
   + Rediff Viewer       (Chrome Extension)
-  + SPY Translator      (C#, COM)
+  + SPY Translator      (C++, C#, COM)
   + SSMatri Viewer      (GreaseMonkey Script)
   + Gmail Browser Open Pages  (Chrome Extension)
 
