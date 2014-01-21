@@ -1,10 +1,10 @@
 ##About this tool##
 
 Rediff is one of the popular sites in India. [The site's Alexa rank is 13.](http://www.alexa.com/siteinfo/rediff.com)
-On Rediff, every article is a multipage article with many advertisements on each page. But in the print mode, the whole
-article displays in one page with no ads. 
+On Rediff, every article is multipage filled with advertisements on each page. But in the print mode of the article, the whole article appears in one page with no ads. 
 
-This is a simple chrome extension which makes all the links on the rediff page to open in print mode. 
+This is a simple chrome extension which makes all the links on the rediff site to open in print mode. 
+
 
 ##Languages##
 
