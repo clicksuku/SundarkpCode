@@ -23,3 +23,7 @@ Copy Across Client application has three tabs
         CMD> JAVA -JAR <JAR FILE NAME>
      
      
+##Demo##
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=pwNZNmLc5Ls" target="_blank">
+<img src="http://img.youtube.com/vi/pwNZNmLc5Ls/0.jpg" alt="https://www.youtube.com/watch?v=pwNZNmLc5Ls" width="240" height="180" border="10" /></a>
