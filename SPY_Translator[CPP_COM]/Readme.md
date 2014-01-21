@@ -7,7 +7,7 @@ Arabic.
 This tool takes an inspiration from Microsoft SPY++ tool. The user can move the "Bulls Eye" to the text he is not able
 to understand. The tool get the translation for the text in English (uses Bing Translate)
 
-![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/SPY%20Translate.jpg "Tool Snapshot")
+![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/SPY%20Translate.png "Tool Snapshot")
 
 
 ##Few more details##
