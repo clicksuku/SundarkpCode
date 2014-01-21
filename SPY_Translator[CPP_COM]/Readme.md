@@ -18,25 +18,24 @@ to understand. The tool get the translation for the text in English (uses Bing T
      
 ##Steps to Install##
 
-  ###Pre-Requisites###
+###Pre-Requisites###
   
-     1. Microsoft Dotnet Framework 4.0
-     2. [Microsoft Visual C++ 2010 Redistributable Package (x86)](http://www.microsoft.com/en-us/download/details.aspx?id=5555)
+1. Microsoft Dotnet Framework 4.0
+2. [Microsoft Visual C++ 2010 Redistributable Package x86](http://www.microsoft.com/en-us/download/details.aspx?id=5555)
 
-
-  ###Installation###
+###Installation###
   
-     1. From the location “C:\Windows\Microsoft.NET\Framework\v4.0.30319” , run the following command 
-     to register the COM component 
+1. From the location “C:\Windows\Microsoft.NET\Framework\v4.0.30319” , run the following command 
+   to register the COM component 
          *Regasm.exe “<Tool Copy Location>\TranslatorComp.dll” /tlb: “<Tool Copy Location>\TranslatorComp.tlb” /codebase*
          
-     2. Run FindControl.exe
-     3. Move the bulls eye to any window to capture text. Or you can copy text directly into the Source text box.
+2. Run FindControl.exe
+3. Move the bulls eye to any window to capture text. Or you can copy text directly into the Source text box.
      
      
 ##Limitations##
 
-    20 Million characters translation limit in Bing API
+20 Million characters translation limit in Bing API
     
     
 ##References##
