@@ -13,7 +13,7 @@ This repository contains the utilities, which I wrote to address few problems I 
 
 #Usage#
 
-Please refer to the readme of the individual projects.
+Please refer to the individual projects for details.
 
 #Author#
 
