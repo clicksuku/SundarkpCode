@@ -24,5 +24,4 @@ Firefox with Greasemonkey Add on Installed.
 ##Demo##
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=bhfuwunVd4E" target="_blank">
-<img src="http://img.youtube.com/vi/bhfuwunVd4E/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" />
-</a>
+<img src="http://img.youtube.com/vi/bhfuwunVd4E/0.jpg" alt="https://www.youtube.com/watch?v=bhfuwunVd4E" width="240" height="180" border="10" /></a>
