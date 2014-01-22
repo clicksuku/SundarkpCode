@@ -1,16 +1,22 @@
 {   
-   "browser_action": {
-      "default_icon": "icon.png"     
-   },
-   "icons": {"128": "icon.png" },
-   "description": "Opens Rediff pages in Print Mode",   
-   "manifest_version": 2,
    "name": "Rediff Viewer",   
-   "version": "1.0",
-   "content_scripts": [
+   "description": "Opens Rediff pages in Print Mode",   	
+   "browser_action"  : 
+   {
+      "default_icon": "icon.png",
+	  "default_title": "Rediff Viewer"	  
+   },   
+   "manifest_version"	: 2,   
+    "update_url"		: "http://clients2.google.com/service/update2/crx",
+	"version"			: "1.0",
+	"icons"				: {				
+		"128": "icon.png" 
+	},   
+   "content_scripts" : 
+   [
 		{
 		  "matches": ["*://*.rediff.com/*"],
 		  "js": ["jquery.min.js","rediff.js"]
 		}
-	]
+	]	
 }
