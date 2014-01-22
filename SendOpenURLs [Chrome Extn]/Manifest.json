@@ -3,6 +3,7 @@
       "default_icon": "icon.png",
       "default_popup": "popup.html"
    },
+   "icons": {"128": "icon.png" },
    "description": "This extension sends open URLs to GMail.",
    "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDTwcKHtMJTsIw8JrSHHvq40zUTk8BeFsvZUQ8SbNoBkEAfREIxpBcRno9+cfKnRyBT9nALpDsuW9ywa8tmdnpL9QT4/1dUShK1aLRfGXCBWIWtSkdyB0nSWlTs7ImShrtO3CKi+0LC1N5tFN1J5871fvl8JR8SF8KCKv0yjHW6fQIDAQAB",
    "manifest_version": 2,

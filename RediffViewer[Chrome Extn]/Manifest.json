@@ -1,4 +1,8 @@
 {   
+   "browser_action": {
+      "default_icon": "icon.png"     
+   },
+   "icons": {"128": "icon.png" },
    "description": "Opens Rediff pages in Print Mode",   
    "manifest_version": 2,
    "name": "Rediff Viewer",   
