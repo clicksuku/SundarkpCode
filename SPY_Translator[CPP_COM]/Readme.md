@@ -34,7 +34,12 @@ to understand. The tool get the translation for the text in English (uses Bing T
 2. Run FindControl.exe
 3. Move the bulls eye to any window to capture text. Or you can copy text directly into the Source text box.
      
-     
+##Demo##
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=vHyN0FkzYnk" target="_blank">
+<img src="http://img.youtube.com/vi/vHyN0FkzYnk/0.jpg" alt="https://www.youtube.com/watch?v=vHyN0FkzYnk" width="240" height="180" border="10" /></a>
+
+
 ##Limitations##
 
 20 Million characters translation limit in Bing API
