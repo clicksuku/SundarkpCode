@@ -1,0 +1,23 @@
+ul
+ {
+	list-style: none;
+}
+
+input[type=checkbox]
+ {
+	float: left;
+    margin-right: 0.4em;
+}
+
+button
+{
+	width: 200px;
+	display: inline-block;
+}
+
+#tabs
+{
+	width: 400px;
+}
+
+ 

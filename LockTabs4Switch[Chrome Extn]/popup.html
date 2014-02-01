@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" style="min-width:600px;">
+  <head>
+	<meta charset="utf-8" />
+    <title>Getting Started Extension's Popup</title>	    
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="jquery-ui-1.10.4.custom.min.css">
+	<link rel="stylesheet" href="popup.css">	
+  </head>
+  <body id="ExtensionBody">
+		<br/>		
+		
+		<div class="controls controls-row">											
+			<div id="alert" class="span4 offset1 alert alert-success">
+				<label id="alertmsg">Please select tabs to switch</label>
+			</div>
+		</div>
+				
+		<div id="tabs" class="row offset1">				
+			<ul>
+				<li><a href="#PickedUrlsContainer"><span>Pick URLs</span></a></li>				
+			</ul>
+			<div id="PickedUrlsContainer">						
+				<ul id="url_list_cbs"></ul>				
+			</div>												
+		</div>		
+		
+		<br/>				
+				
+		<div class="controls controls-row offset1">											
+			<button id="eventSelected" class="btn btn-inverse" type="button">Select</button>			
+		</div>
+
+		<br/>		
+		
+  </body>    
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>     
+  <script src="popup_jquery.js"></script>    
+  <script src="jquery-ui-1.10.4.custom.min.js"></script>
+</html>
