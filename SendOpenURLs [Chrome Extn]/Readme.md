@@ -18,10 +18,7 @@ Chrome Browser
 
 ###Installation###
   
-1. Drag and drop the CRX file on to the Chrome browser. 
-
-PLEASE NOTE - In Chrome 32/33, the browser may stop loading the extension, if it is not from Google Webstore. Working on a
-version now. 
+[Install from Chrome WebStore](https://chrome.google.com/webstore/detail/send-open-urls/ohapipgmanomnljkmlkainclgblifagk)
 
 ##Demo##
 
