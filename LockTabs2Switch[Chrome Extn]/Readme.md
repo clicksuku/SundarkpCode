@@ -17,7 +17,7 @@ Chrome Browser
 
 ###Installation###
   
-[Install from Chrome WebStore](https://chrome.google.com/webstore/detail/rediff-viewer/iljopgjppjojkganmkfokfcdbkedoehn)
+[Install from Chrome WebStore](https://chrome.google.com/webstore/detail/locktabs2switch/pllchchhoedgkdmhebopllldeendeoga)
 
 ##Demo##
 
