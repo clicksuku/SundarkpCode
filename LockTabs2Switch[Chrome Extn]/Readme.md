@@ -1,8 +1,8 @@
 ##About this tool##
 
-LockTabs2Switch provides easy tabbing on Chrome browser. Ctrl+Tab travels through all available tabs. Or Ctrl+num is a little difficult.
+LockTabs2Switch provides easy tabbing and also intelligent tabbing for Chrome browser. 
 
-This extension allows the user to select the tabs (even across Windows) a user wants to navigate and allow him to navigate with a simple Ctrl+Z.
+Ctrl+Tab travels through all available tabs. Or Ctrl+num is a little difficult. This extension automatically switches between the last two tabs the user visited. Also this extension allows the user to select the tabs (even across Windows) a user wants to navigate and allow him to navigate with a simple Ctrl+Z.
 
 
 ##Languages##
