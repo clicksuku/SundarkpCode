@@ -31,11 +31,11 @@ function PopulateCheckboxList(id, url, title)
 								.click (function (event)
 								{
 									if($('#cb'+id).is(':checked')) {
-										finalURLsList[id] = id;
+										finalURLsList.push(id);
 									}							
 									else
 									{
-										delete finalURLsList[id];
+										finalURLsList.splice($.inArray(id, finalURLsList),1);										
 									}									
 								})
 								.append($('<label/>', 
@@ -49,7 +49,7 @@ function PopulateCheckboxList(id, url, title)
 
 function PickURLS()
 {	
-	finalURLsList = {};
+	finalURLsList = new Array();
 	$('#url_list_cbs').empty();		
 	chrome.tabs.query({},list);    	
 }
@@ -60,7 +60,7 @@ $(document).ready(function() {
 });
 
 $("#eventSelected").click(function(){
-	if(1 >= Object.size(finalURLsList))
+	if(1 >= finalURLsList.length)
 	{
 		$("#alert").removeClass("alert-info").addClass("alert-error");
 		$("#alertmsg").text("Please select atleast two tabs to switch");
@@ -80,16 +80,7 @@ $("#eventSelected").click(function(){
 });
 
 
-Object.size = function(obj) {
-    var size = 0, key;
-    for (key in obj) {
-        if (obj.hasOwnProperty(key)) size++;
-    }
-    return size;
-};
-
-
 var totalTabs = -1;
 var currentTabId = -1;
-var finalURLsList = {};
+var finalURLsList = new Array();
  

@@ -10,15 +10,12 @@ chrome.commands.onCommand.addListener(function(command) {
 
 function SwitchTabs()
 {
-	var keys = Object.keys(finalURLsList).sort();
+	var loc = finalURLsList.indexOf(currentTabID);
 	
-	if(finalURLsList.hasOwnProperty(currentTabID))	
-	{
-		var strCurrentId = String(currentTabID);
-		var loc = keys.indexOf(strCurrentId);
-		
+	if(loc != -1)		
+	{		
 		var nextTab = loc + 1;
-		if(nextTab >= keys.length)
+		if(nextTab >= finalURLsList.length)
 		{
 			nextTab = 0;
 		}						
@@ -28,24 +25,107 @@ function SwitchTabs()
 		nextTab = 0;
 	}
 	
-	if(keys.length > 0)
+	if(finalURLsList.length > 0)
 	{
-		nextTabId = keys[nextTab];
-		chrome.tabs.update(parseInt(nextTabId), {"active":true,"highlighted":true}, function(tab){
+		nextTabId = finalURLsList[nextTab];
+		chrome.tabs.update(nextTabId, {"active":true,"highlighted":true}, function(tab){
 			var window = tab.windowId;
-			chrome.windows.update(window, {"focused":true});
+			if(window)
+			{
+				chrome.windows.update(window, {"focused":true});
+			}
 		});
 	}
 }
 
 
 chrome.tabs.onRemoved.addListener(function (tabId, removeInfo) {
-	if(finalURLsList.hasOwnProperty(tabId))	
+	var loc = finalURLsList.indexOf(tabId);
+	
+	if(loc != -1)			
 	{
-		delete finalURLsList[tabId];
+		finalURLsList.splice($.inArray(tabId, finalURLsList),1);		
 		SwitchTabs();
 	}
+	
+	if(finalURLsList.length <= 0)
+	{
+		finalURLsList = new Array();
+		currentBrowserActionState = "Open";
+		SetOpenBrowserActionState();	
+	}
+	
 });
+
+
+chrome.tabs.onActivated.addListener(function(activeInfo) {
+	var tabId = activeInfo.tabId;
+	
+	if(tabId === "undefined")
+	{
+		return;
+	}
+	
+	AddToAutoTabList(tabId);
+}); 
+
+chrome.windows.onCreated.addListener(function(window) {
+	var tabs = window.tabs;	
+	if(!tabs)
+	{
+		return;
+	}
+	
+	var tab = tabs[0];
+	var tabId = tab.Id;
+	
+	if(tabId === "undefined")
+	{
+		return;
+	}
+	
+	AddToAutoTabList(tabId);
+});
+
+
+function AddToAutoTabList(tabId)
+{
+	var loc = finalURLsList.indexOf(tabId);	
+	if(loc != -1)			
+	{
+		//Swapping tabs so that the active tab always stay top 
+		// of the stack
+		if(tabId == finalURLsList[0])
+		{	
+			var temp = finalURLsList[1];		
+			finalURLsList[1] = tabId;
+			finalURLsList[0] = temp;
+			return;
+		}
+	}
+	
+	if(currentBrowserActionState == "Open")
+	{
+		finalURLsList.push(tabId);		
+		
+		if(finalURLsList.length == 2)
+		{
+			currentBrowserActionState = "Auto";		
+			SetLockedBrowserActionState();		
+		}		
+	}
+	else if (currentBrowserActionState == "Auto")
+	{
+		if(finalURLsList.length >=2)
+		{
+			finalURLsList.shift();
+		}
+		
+		finalURLsList.push(tabId);		
+	}
+}
+
+
 
 function SetLockedBrowserActionState()
 {
@@ -69,9 +149,9 @@ function SetOpenBrowserActionState()
 
 chrome.browserAction.onClicked.addListener(function(tab)
 {
-	if(currentBrowserActionState == "Locked")
+	if((currentBrowserActionState == "Locked") || (currentBrowserActionState == "Auto"))
 	{
-		finalURLsList = {};
+		finalURLsList = new Array();
 		currentBrowserActionState = "Open";
 		SetOpenBrowserActionState();	
 	}
@@ -89,10 +169,9 @@ chrome.runtime.onMessage.addListener( function(request,sender,sendResponse)
 	currentBrowserActionState = "Locked";
 });  
 
-
-var finalURLsList = {};
+var finalURLsList = new Array();
 var currentTabID = -1;
 var currentBrowserActionState = "Open";
 var searching_images = ['locked.png',
                         'open.png'];
- 
+ var numTabsOpen = 0;
