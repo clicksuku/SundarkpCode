@@ -24,3 +24,7 @@ Chrome Browser
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=SK9u9ozI-CE" target="_blank">
 <img src="http://img.youtube.com/vi/SK9u9ozI-CE/0.jpg" alt="https://www.youtube.com/watch?v=SK9u9ozI-CE" width="240" height="180" border="10" /></a>
+
+#License#
+New APACHE License - Copyright(c) 2014, Sundara Kumar Padmanabhan. 
+See [License](http://www.apache.org/licenses/LICENSE-2.0.html) for details.
