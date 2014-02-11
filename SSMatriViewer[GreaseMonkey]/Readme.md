@@ -25,3 +25,7 @@ Firefox with Greasemonkey Add on Installed.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=bhfuwunVd4E" target="_blank">
 <img src="http://img.youtube.com/vi/bhfuwunVd4E/0.jpg" alt="https://www.youtube.com/watch?v=bhfuwunVd4E" width="240" height="180" border="10" /></a>
+
+#License#
+New APACHE License - Copyright(c) 2014, Sundara Kumar Padmanabhan. 
+See [License](http://www.apache.org/licenses/LICENSE-2.0.html) for details.
