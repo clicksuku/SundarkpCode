@@ -16,6 +16,10 @@ This repository contains the utilities, which I wrote to address few problems I 
 
 Please refer to the individual projects for details.
 
+#License#
+New APACHE License - Copyright(c) 2014, Sundara Kumar Padmanabhan
+See [License](http://www.apache.org/licenses/LICENSE-2.0.html) for details.
+
 #Author#
 
 [Sundara Kumar Padmanabhan](http://www.linkedin.com/in/sundarkp)
