@@ -43,9 +43,15 @@ to understand. The tool get the translation for the text in English (uses Bing T
 ##Limitations##
 
 20 Million characters translation limit in Bing API
-    
+
+#License#
+New APACHE License - Copyright(c) 2014, Sundara Kumar Padmanabhan. 
+See [License](http://www.apache.org/licenses/LICENSE-2.0.html) for details.
+
     
 ##References##
 
      1. http://www.codeproject.com/Articles/1698/MS-Spy-style-Window-Finder
      2.	Bing Translator - http://msdn.microsoft.com/en-us/library/dd576287.aspx
+     
+     
