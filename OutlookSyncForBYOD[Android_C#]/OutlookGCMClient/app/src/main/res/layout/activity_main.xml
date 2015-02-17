@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:background="#FF297076"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Setup"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:textColor="#ff000000"
+        android:textSize="40sp"
+        android:typeface="serif"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/etProjectId"
+        android:layout_height="38dp"
+        android:layout_width="170dp"
+        android:textStyle="normal"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="50dp"
+        android:numeric="integer"
+        android:editable="true"
+        android:background="@drawable/focus_border_style"/>
+
+    <Button
+        android:id="@+id/btnProjectID"
+        android:layout_width="wrap_content"
+        android:text="Set"
+        android:layout_toRightOf="@+id/etProjectId"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@id/etProjectId"
+        android:layout_height="38dp"
+        android:textSize="18sp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"  />
+
+    <Button
+        android:id="@+id/btnGetRegId"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:text="Generate"
+        android:layout_below="@id/etProjectId"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"  />
+
+    <Button
+        android:id="@+id/btnPack"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:text="Mail"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="45dp"
+        android:textSize="18sp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/etProjectId"
+        android:layout_toRightOf="@+id/btnGetRegId"/>
+
+    <EditText
+        android:id="@+id/etRegId"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@+id/btnGetRegId"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_alignLeft="@id/etProjectId"
+        android:layout_alignRight="@id/btnProjectID"
+        android:editable="false"
+        android:background="@drawable/focus_border_style"/>
+</RelativeLayout>
+
+

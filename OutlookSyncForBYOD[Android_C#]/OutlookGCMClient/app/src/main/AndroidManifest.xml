@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sundarkp.DailyMeetingsInAndroid"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+
+    <uses-sdk android:minSdkVersion="15"/>
+
+    <!-- For GCM Communication -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.sundarkp.DailyMeetingsInAndroid.permission.C2D_MESSAGE" />
+
+    <!-- To Create Reminders -->
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+
+    <permission
+        android:name="com.sundarkp.DailyMeetingsInAndroid.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/calendar"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:alwaysRetainTaskState="true"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name=".LandingPageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_landing_page"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:alwaysRetainTaskState="true"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MeetingsActivity"
+            android:screenOrientation="portrait"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/title_activity_meetings"
+            android:launchMode="singleTop">
+        </activity>
+
+        <receiver
+            android:name=".GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.sundarkp.DailyMeetingsInAndroid" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".GcmMessageHandler"
+            android:exported="false" >
+        </service>
+    </application>
+</manifest>

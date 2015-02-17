@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Daily Meetings App</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_meetings">Meetings for the Day</string>
+    <string name="title_activity_landing_page">Meetings for the Day</string>
+    <string name="landing_page_button">press to start</string>
+    <string name="landing_page_header">hello</string>
+    <string name="landing_page_content">\nyour outlook\nappointments</string>
+
+</resources>
