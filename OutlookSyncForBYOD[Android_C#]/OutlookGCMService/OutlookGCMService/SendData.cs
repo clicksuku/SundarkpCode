@@ -40,7 +40,7 @@ namespace OutlookGCMService
                 req.Method = "POST";
 
 
-                String encryptedData = encryptor.Encrypt(data, "123");
+                String encryptedData = encryptor.Encrypt(data, "TheDataIsEncrypted");
                 data = "{\"meetings\":\"" + encryptedData + "\"}";
 
                 

@@ -43,6 +43,8 @@
             this.Run = new System.Windows.Forms.Button();
             this.cbInterval = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.EditProjID = new System.Windows.Forms.Button();
+            this.EditRegID = new System.Windows.Forms.Button();
             this.ctxMenuOptions.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -165,12 +167,36 @@
             this.label2.TabIndex = 17;
             this.label2.Text = "OutlookSync for BYOD (Android)";
             // 
+            // EditProjID
+            // 
+            this.EditProjID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditProjID.Location = new System.Drawing.Point(326, 50);
+            this.EditProjID.Name = "EditProjID";
+            this.EditProjID.Size = new System.Drawing.Size(27, 27);
+            this.EditProjID.TabIndex = 18;
+            this.EditProjID.Text = "...";
+            this.EditProjID.UseVisualStyleBackColor = true;
+            this.EditProjID.Click += new System.EventHandler(this.EditProjID_Click);
+            // 
+            // EditRegID
+            // 
+            this.EditRegID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditRegID.Location = new System.Drawing.Point(326, 83);
+            this.EditRegID.Name = "EditRegID";
+            this.EditRegID.Size = new System.Drawing.Size(27, 27);
+            this.EditRegID.TabIndex = 19;
+            this.EditRegID.Text = "...";
+            this.EditRegID.UseVisualStyleBackColor = true;
+            this.EditRegID.Click += new System.EventHandler(this.EditRegID_Click);
+            // 
             // OutlookSyncBYODService
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(112)))), ((int)(((byte)(118)))));
-            this.ClientSize = new System.Drawing.Size(346, 224);
+            this.ClientSize = new System.Drawing.Size(365, 224);
+            this.Controls.Add(this.EditRegID);
+            this.Controls.Add(this.EditProjID);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbInterval);
             this.Controls.Add(this.Run);
@@ -208,6 +234,8 @@
         private System.Windows.Forms.Button Run;
         private System.Windows.Forms.ComboBox cbInterval;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button EditProjID;
+        private System.Windows.Forms.Button EditRegID;
     }
 }
 

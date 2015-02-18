@@ -31,14 +31,12 @@
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:alwaysRetainTaskState="true"
-            android:screenOrientation="portrait"
-            android:launchMode="singleTop">
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".LandingPageActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_landing_page"
-            android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:alwaysRetainTaskState="true"
             android:theme="@style/FullscreenTheme" >
@@ -51,8 +49,7 @@
             android:name=".MeetingsActivity"
             android:screenOrientation="portrait"
             android:alwaysRetainTaskState="true"
-            android:label="@string/title_activity_meetings"
-            android:launchMode="singleTop">
+            android:label="@string/title_activity_meetings">
         </activity>
 
         <receiver

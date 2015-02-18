@@ -43,10 +43,10 @@ public class GcmMessageHandler extends IntentService {
         response = extras.getString("meetings");
 
         try {
-            String decryptedData = encryptor.decrypt(response,"123");
+            String decryptedData = encryptor.decrypt(response,"TheDataIsEncrypted");
 
             Intent dialogIntent = new Intent(getBaseContext(), MeetingsActivity.class);
-            dialogIntent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT | Intent.FLAG_ACTIVITY_NEW_TASK);
+            dialogIntent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
             Bundle b = new Bundle();
             b.putString("meetings", decryptedData);
             dialogIntent.putExtras(b);
