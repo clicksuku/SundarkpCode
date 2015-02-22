@@ -15,21 +15,21 @@ whether it would support syncing only the basic information. Basic Information u
 ##Few more details##
 
   1. **Why Google Cloud Messaging?**
-     ..*Required a HTTP Way to automatically push the outlook meetings information to a custom Android Device. 
+     -Required a HTTP Way to automatically push the outlook meetings information to a custom Android Device. 
   2. **Design**
-	..![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookSyncServiceForBYOD_Design.png "Solution Design")	 
+	 -![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookSyncServiceForBYOD_Design.png "Solution Design")	 
      
 ##Steps to Install##
 
 ###Pre-Requisites###
   
 1. A Google Project with GCM Enabled is required
-	..a.	To enable Google Cloud Messaging between Windows Service and Android phone, create a project in [Google Developers Console](https://console.developers.google.com/project). 
-	..b.	Under the “API & Auth”, in APIs, enable ‘Google Cloud Messaging for Android’
-	..c.	Under “Credentials”, select ‘Create New Key’ (Public API Access). Choose “Server Key”
+	a.	To enable Google Cloud Messaging between Windows Service and Android phone, create a project in [Google Developers Console](https://console.developers.google.com/project). 
+	b.	Under the “API & Auth”, in APIs, enable ‘Google Cloud Messaging for Android’
+	c.	Under “Credentials”, select ‘Create New Key’ (Public API Access). Choose “Server Key”
 2.	Collect the following parameters
-	..a.	Get the ‘API Key’ from step 1.C 
-	..b.	Get the “Project Number” from “Overview” in the Project Created in step 1.
+	a.	Get the ‘API Key’ from step 1.C 
+	b.	Get the “Project Number” from “Overview” in the Project Created in step 1.
 3. Microsoft Dotnet Framework 4.0
 
 
@@ -37,34 +37,34 @@ whether it would support syncing only the basic information. Basic Information u
   
 1.	Go to the [Link to download](https://drive.google.com/folderview?id=0BxO_wd5xBtRWfjJxNVlzTURtWlRtcXdSdTZXQkoyZjZ1MmRISk5GS3h4QVdQX2FoeVdLekk&usp=sharing_eid&invite=CO_E0ik)
 2.	Android Client
-	..a.	Download OutlookSyncBYOD.apk
-	..b.	Install the apk using adb command
-		..i. adb install OutlookSyncBYOD.apk
+	a.	Download OutlookSyncBYOD.apk
+	b.	Install the apk using adb command
+		i. adb install OutlookSyncBYOD.apk
 3.	Windows Application (System Tray)
-	..a.	Goto OutlookSyncService
-	..b.	Download OutlookSyncByodInstaller.msi
-	..c.	Install msi
+	a.	Goto OutlookSyncService
+	b.	Download OutlookSyncByodInstaller.msi
+	c.	Install msi
 
      
 ##How to Run##
 1.	Android Side
-	..a.	Start the App
-		..![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODLandingPage.png "Landing Page")
-	..b.	Key in the Project Number (first Text Box) from 2.b in Perquisites. Click ‘Set’ to set the project ID.
-		..![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODSetupScreen.png "Device ID Generated")
-	..c.	Click “Generate”. Device ID is generated
-	..d.	Mail the generated Device ID
-		..![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODDeviceID.png "Mail the Device ID")
+	a.	Start the App
+		- ![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODLandingPage.png "Landing Page")
+	b.	Key in the Project Number (first Text Box) from 2.b in Perquisites. Click ‘Set’ to set the project ID.
+		- ![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODSetupScreen.png "Device ID Generated")
+	c.	Click “Generate”. Device ID is generated
+	d.	Mail the generated Device ID
+		- ![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODDeviceID.png "Mail the Device ID")
 2.	Windows Service
-	..a.	Enter the ‘API Key’ obtained from ‘2.a’ in Perquisites
-	..b.	Enter the Device ID from the mail sent in 1.d above from Android
-	..c.	Click Setup (Please note that it is a one-Time Process. It should run automatically in the system tray)
-	..d.	Run	
-		..![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODWinApp.png "Windows Application")
+	a.	Enter the ‘API Key’ obtained from ‘2.a’ in Perquisites
+	b.	Enter the Device ID from the mail sent in 1.d above from Android
+	c.	Click Setup (Please note that it is a one-Time Process. It should run automatically in the system tray)
+	d.	Run	
+		- ![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODWinApp.png "Windows Application")
 3.	Android
-	..a.	Meetings are created
-	..b.	Reminders are automatically created in the calendar. Reminders.
-		..![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODMeeting.png "Meetings listed on your device")
+	a.	Meetings are created
+	b.	Reminders are automatically created in the calendar. Reminders.
+		- ![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODMeeting.png "Meetings listed on your device")
 
 ##Additional Info##
 The data flowing over the GCM is encrypted with AES-128 algorithm. 
