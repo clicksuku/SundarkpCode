@@ -63,13 +63,14 @@ whether it would support syncing only the basic information. Basic Information u
 	b.	Reminders are automatically created in the calendar. 
 	
 
-##Screenshots##
-	![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODLandingPage.png "Landing Page")
-	![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODSetupScreen.png "Device ID Generated")
-	![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODDeviceID.png "Mail the Device ID")
-	![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODWinApp.png "Windows Application")
+##Screenshots##	
+
+	![Landing Page](/https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODLandingPage.png )
+    ![Device ID Generated](/https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODSetupScreen.png )
+	![Mail the Device ID](/https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODDeviceID.png)
+	![Windows Application](/https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODWinApp.png )
 	
-	![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODMeeting.png "Meetings listed on your device")
+	![Meetings listed on your device](/https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODMeeting.png )
 	
 ##Additional Info##
 The data flowing over the GCM is encrypted with AES-128 algorithm. 
