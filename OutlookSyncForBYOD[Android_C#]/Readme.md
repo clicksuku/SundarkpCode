@@ -49,24 +49,28 @@ whether it would support syncing only the basic information. Basic Information u
      
 ##How to Run##
 1.	Android Side
-	a.	Start the App
-		- ![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODLandingPage.png "Landing Page")
-	b.	Key in the Project Number (first Text Box) from 2.b in Perquisites. Click ‘Set’ to set the project ID.
-		- ![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODSetupScreen.png "Device ID Generated")
+	a.	Start the App	
+	b.	Key in the Project Number (first Text Box) from 2.b in Perquisites. Click ‘Set’ to set the project ID.		
 	c.	Click “Generate”. Device ID is generated
-	d.	Mail the generated Device ID
-		- ![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODDeviceID.png "Mail the Device ID")
+	d.	Mail the generated Device ID		
 2.	Windows Service
 	a.	Enter the ‘API Key’ obtained from ‘2.a’ in Perquisites
 	b.	Enter the Device ID from the mail sent in 1.d above from Android
 	c.	Click Setup (Please note that it is a one-Time Process. It should run automatically in the system tray)
-	d.	Run	
-		- ![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODWinApp.png "Windows Application")
+	d.	Run			
 3.	Android
 	a.	Meetings are created
-	b.	Reminders are automatically created in the calendar. Reminders.
-		- ![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODMeeting.png "Meetings listed on your device")
+	b.	Reminders are automatically created in the calendar. 
+	
 
+##Screenshots##
+	![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODLandingPage.png "Landing Page")
+	![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODSetupScreen.png "Device ID Generated")
+	![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODDeviceID.png "Mail the Device ID")
+	![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODWinApp.png "Windows Application")
+	
+	![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODMeeting.png "Meetings listed on your device")
+	
 ##Additional Info##
 The data flowing over the GCM is encrypted with AES-128 algorithm. 
 
