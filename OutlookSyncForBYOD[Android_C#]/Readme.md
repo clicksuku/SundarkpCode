@@ -16,7 +16,8 @@ whether it would support syncing only the basic information. Basic Information u
 
   1. **Why Google Cloud Messaging?**
      -Required a HTTP Way to automatically push the outlook meetings information to a custom Android Device. 
-  2. **Design**
+  
+  
 	 -![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookSyncServiceForBYOD_Design.png "Solution Design")	 
      
 ##Steps to Install##
