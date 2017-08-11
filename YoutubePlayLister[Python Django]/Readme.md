@@ -1,30 +1,32 @@
  ## About this tool ##
 
-SSMatri.net is a south indian matrimonial site. The site has several profiles (Bride and groom) listed in it. 
-The photos associated with each profile is shown as a Icon (Camera). The user has to see the profile photos clicking every 
-icon. 
-
-This greasemonkey script populates all available photos in the same page. It reduces the effort of clicking. 
+YoutubePlaylister generates a list of videos present in one's created playlists. Due to copyright issue, Google takes down videos and few a times users may find it difficult to identify the video stored. 
 
 ## Languages ##
 
-Firefox, Greasemonkey script
+Django
+Google API Python Client for Youtube Integration
+Jquery
+Bootstrap
+Bower UI Package Manager
+W2UI Sidebar (<a href="http://w2ui.com/web/docs/1.5/sidebar" target="_blank">Documentation</a>)
+Handlebars for templating
+FileSaver JS (<a href="https://eligrey.com/demos/FileSaver.js/" target="_blank">Documentation</a>)
+
+
      
  ##Steps to Install##
 
 ###Pre-Requisites###
 
-Firefox with Greasemonkey Add on Installed. 
+Python 2.7.13 installed. 
+Dependencies mentioned in requirements.txt and bower.json installed. 
 
 ###Installation###
   
-1. On Firefox, click 'Open File'.
-2. Select 'SSMatriView.user.js' from the path where you downloaded the files. 
 
 ##Demo##
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=bhfuwunVd4E" target="_blank">
-<img src="http://img.youtube.com/vi/bhfuwunVd4E/0.jpg" alt="https://www.youtube.com/watch?v=bhfuwunVd4E" width="240" height="180" border="10" /></a>
 
 #License#
 New APACHE License - Copyright(c) 2014, Sundara Kumar Padmanabhan. 
