@@ -4,14 +4,14 @@ YoutubePlaylister generates a list of videos present in one's created playlists.
 
 ## Languages ##
 
-Django
-Google API Python Client for Youtube Integration
-Jquery
-Bootstrap
-Bower UI Package Manager
-W2UI Sidebar (<a href="http://w2ui.com/web/docs/1.5/sidebar" target="_blank">Documentation</a>)
-Handlebars for templating
-FileSaver JS (<a href="https://eligrey.com/demos/FileSaver.js/" target="_blank">Documentation</a>)
+* Django
+* Google API Python Client for Youtube Integration
+* Jquery
+* Bootstrap
+* Bower UI Package Manager
+* W2UI Sidebar (<a href="http://w2ui.com/web/docs/1.5/sidebar" target="_blank">Documentation</a>)
+* Handlebars for templating
+* FileSaver JS (<a href="https://eligrey.com/demos/FileSaver.js/" target="_blank">Documentation</a>)
 
 
      
