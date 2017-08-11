@@ -14,20 +14,20 @@ YoutubePlaylister generates a list of videos present in one's created playlists.
 * FileSaver JS (<a href="https://eligrey.com/demos/FileSaver.js/" target="_blank">Documentation</a>)
 
 
-     
- ##Steps to Install##
+      
+## Steps to Install ##
 
-###Pre-Requisites###
+### Pre-Requisites ###
 
 Python 2.7.13 installed. 
 Dependencies mentioned in requirements.txt and bower.json installed. 
 
-###Installation###
+### Installation ###
   
 
-##Demo##
+## Demo ##
 
 
-#License#
+# License #
 New APACHE License - Copyright(c) 2014, Sundara Kumar Padmanabhan. 
 See [License](http://www.apache.org/licenses/LICENSE-2.0.html) for details.
