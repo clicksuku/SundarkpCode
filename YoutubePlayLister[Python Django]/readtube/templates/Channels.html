@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <title>Channels Page</title>
+
+	    <link rel="icon" type="image/png" href="/static/images/favicon.png" sizes="32x32" />
+
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" type="text/css" href="/static/bootstrap/dist/css/bootstrap.min.css" />
+	   	<link rel="stylesheet" type="text/css" href="/static/w2ui/w2ui-1.4.3.min.css" />
+		
+		<link rel="stylesheet" type="text/css" href="/static/css/Channels.css"/>
+		<link rel="stylesheet" type="text/css" href="/static/css/Card.css"/>
+
+	    <script type="text/javascript" src="/static/jquery/dist/jquery.js"></script>
+	    <script type="text/javascript" src="/static/bootstrap/dist/js/bootstrap.min.js"></script>
+	    <script type="text/javascript" src="/static/w2ui/w2ui-1.4.3.min.js"></script>
+	    <script type="text/javascript" src="/static/handlebars/handlebars.min.js"></script>
+	    <script type="text/javascript" src="/static/file-saver/FileSaver.min.js"></script>
+	    
+	    <script type="text/javascript" src="/static/js/Channels.js""></script>
+	    <script type="text/javascript">
+	    	var ChannelData = $.parseJSON('{{ channels_string | escapejs }}');
+		</script>	
+	</head>
+	<body>
+		<div class="header">
+			<h1 class="hdr">Welcome to Youtube Channels Data</h1>
+			<br/>
+		</div>
+
+		<div id="sidebar" class="col-md-3" style="height: 700px; width: 300px;"></div>  
+		
+
+		<div class="col-md-9"  id="content">
+			<br/>
+			<div class="topnav" id="myTopnav">
+			  <a id="export" href="#Export" onclick="exportData(ChannelData);">Export</a>
+			</div>
+			<br/>
+			<br/>
+			<div id="Cards">
+			</div>
+		</div>>
+		
+
+		<script id="card-template" type="text/x-handlebars-template">
+			{% verbatim %}
+				{{#each video}}
+					<div class="card">
+						<img id="videoImage" src="{{defthumbnailURL}}" style="width:100%">
+						<div class="container">
+						    <h3>{{title}}</h3>
+						    {{#if_eq  title "Deleted video"}}
+							    <p><a class="vidurl" href="https://www.google.co.in/search?q={{id}}" target=\"_blank\"> {{id}} </a> </p>
+					    	{{else}}
+					    		{{#if_eq  title "Private video"}}
+							    	<p><a class="vidurl" href="https://www.google.co.in/search?q={{id}}" target=\"_blank\"> {{id}} </a> </p>
+								{{else}}
+									<p><a class="vidurl" href="https://www.youtube.com/watch?v={{id}}" target=\"_blank\"> {{id}} </a> </p>
+						    	{{/if_eq}}
+							{{/if_eq}}
+						</div>
+					</div>
+				{{/each}}
+			{% endverbatim %}
+		</script>
+
+	</body>
+</html>

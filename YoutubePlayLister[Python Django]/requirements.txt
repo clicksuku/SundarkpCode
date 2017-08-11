@@ -1,0 +1,4 @@
+Django==1.11.3
+httplib2==0.10.3
+google_api_python_client==1.6.2
+protobuf==3.3.0

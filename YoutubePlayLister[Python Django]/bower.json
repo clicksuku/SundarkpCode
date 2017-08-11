@@ -1,0 +1,25 @@
+{
+  "name": "utubepl",
+  "description": "",
+  "main": "",
+  "authors": [
+    "sundar.kp"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "readtube/static/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "file-saver": "^1.3.3",
+    "handlebars": "^4.0.10",
+    "w2ui": "^1.4.3"
+  }
+}
