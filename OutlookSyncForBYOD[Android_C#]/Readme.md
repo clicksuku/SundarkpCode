@@ -1,4 +1,4 @@
-##About this tool##
+## About this tool ##
 
 This tool sync Outlook Meetings(Basic Info only) to a non-Company-Owned Android Device. The tool leverages Google Cloud Messaging for Android to implement the 
 sync. 
@@ -12,7 +12,7 @@ whether it would support syncing only the basic information. Basic Information u
 	5. Meeting End Time
 	6. Meeting Reminder
 
-##Few more details##
+## Few more details ##
 
   1. **Why Google Cloud Messaging?**
      -Required a HTTP Way to automatically push the outlook meetings information to a custom Android Device. 
@@ -20,9 +20,9 @@ whether it would support syncing only the basic information. Basic Information u
   
 	 -![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookSyncServiceForBYOD_Design.png "Solution Design")	 
      
-##Steps to Install##
+## Steps to Install ##
 
-###Pre-Requisites###
+### Pre-Requisites ###
   
 1. A Google Project with GCM Enabled is required
 	a.	To enable Google Cloud Messaging between Windows Service and Android phone, create a project in [Google Developers Console](https://console.developers.google.com/project). 
@@ -34,7 +34,7 @@ whether it would support syncing only the basic information. Basic Information u
 3. Microsoft Dotnet Framework 4.0
 
 
-###Installation###
+### Installation ###
   
 1.	Go to the [Link to download](https://drive.google.com/folderview?id=0BxO_wd5xBtRWfjJxNVlzTURtWlRtcXdSdTZXQkoyZjZ1MmRISk5GS3h4QVdQX2FoeVdLekk&usp=sharing_eid&invite=CO_E0ik)
 2.	Android Client
@@ -47,7 +47,7 @@ whether it would support syncing only the basic information. Basic Information u
 	c.	Install msi
 
      
-##How to Run##
+## How to Run ##
 1.	Android Side
 	a.	Start the App	
 	b.	Key in the Project Number (first Text Box) from 2.b in Perquisites. Click ‘Set’ to set the project ID.		
@@ -63,7 +63,7 @@ whether it would support syncing only the basic information. Basic Information u
 	b.	Reminders are automatically created in the calendar. 
 	
 
-##Screenshots##	
+## Screenshots ##	
 
 	![Landing Page](/https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODLandingPage.png )
     ![Device ID Generated](/https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODSetupScreen.png )
@@ -72,14 +72,14 @@ whether it would support syncing only the basic information. Basic Information u
 	
 	![Meetings listed on your device](/https://github.com/clicksuku/SundarkpCode/blob/master/Images/OutlookBYODMeeting.png )
 	
-##Additional Info##
+## Additional Info ##
 The data flowing over the GCM is encrypted with AES-128 algorithm. 
 
-#License#
+# License #
 New APACHE License - Copyright(c) 2014, Sundara Kumar Padmanabhan. 
 See [License](http://www.apache.org/licenses/LICENSE-2.0.html) for details.
     
-##References##
+## References ##
 
     A.	Android GCM is mostly derived from http://hmkcode.com/android-google-cloud-messaging-tutorial/
 	B.	Android – Swipe Gestures - http://stackoverflow.com/questions/4139288/android-how-to-handle-right-to-left-swipe-gestures
