@@ -1,4 +1,4 @@
-##About this tool##
+## About this tool ##
 
 This Chrome extension provides two functionalities
 
@@ -6,25 +6,25 @@ This Chrome extension provides two functionalities
    * Open the sent URLs on the Chrome Browser
 
 
-##Languages##
+## Languages ##
 
 Chrome Extension, JQuery
      
-##Steps to Install##
+## Steps to Install ##
 
-###Pre-Requisites###
+### Pre-Requisites ###
 
 Chrome Browser
 
-###Installation###
+### Installation ###
   
 [Install from Chrome WebStore](https://chrome.google.com/webstore/detail/send-open-urls/ohapipgmanomnljkmlkainclgblifagk)
 
-##Demo##
+## Demo ##
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=i3Cxm4Xi6TM" target="_blank">
 <img src="http://img.youtube.com/vi/i3Cxm4Xi6TM/0.jpg" alt="https://www.youtube.com/watch?v=i3Cxm4Xi6TM" width="240" height="180" border="10" /></a>
 
-#License#
+# License #
 New APACHE License - Copyright(c) 2014, Sundara Kumar Padmanabhan. 
 See [License](http://www.apache.org/licenses/LICENSE-2.0.html) for details.
