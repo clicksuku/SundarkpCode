@@ -37,7 +37,7 @@
 		<div class="col-md-9"  id="content">
 			<br/>
 			<div class="topnav" id="myTopnav">
-			  <a id="export" href="#Export" onclick="exportData(ChannelData);">Export</a>
+			  <a id="export" href="#Export" onclick="exportDataTemplate();">Export</a>
 			</div>
 			<br/>
 			<br/>
@@ -65,6 +65,35 @@
 						</div>
 					</div>
 				{{/each}}
+			{% endverbatim %}
+		</script>
+
+
+		<script id="export-template" type="text/x-handlebars-template">
+			{% verbatim %}
+				<html>
+				<body>
+					<br/>
+					{{#playlists}}
+					<b>{{title}}</b>	
+					<ul type = "circle">		
+						{{#videos}}
+							{{#if_eq  title "Deleted video"}}
+								<li>
+									<font color="red">Deleted Video - </font>
+									<a href="https://www.google.co.in/search?q={{id}}" target=\"_blank\">{{id}}</a> 
+								</li>
+							{{else}}
+								<li>
+									<img id="videoImage" src="{{defthumbnailURL}}" style="height:30px; width:30px;">
+									<a href="https://www.youtube.com/watch?v={{id}}"  target=\"_blank\">{{title}}</a>
+								</li>
+							{{/if_eq}}
+						{{/videos}}	
+					</ul>	
+					{{/playlists}}
+				</body>
+				</html>
 			{% endverbatim %}
 		</script>
 

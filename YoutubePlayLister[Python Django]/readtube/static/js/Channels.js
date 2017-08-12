@@ -1,10 +1,30 @@
+var newpl = null;
+
 $(document).ready(function() {	
 	
+	registerHandlebarHelpers();
 	$("#includedContent").load("Card.html");
 
 	var id  = ChannelData[0]['id'];
 	var playlists = ChannelData[0]['playlists'];
+	newpl = sortPl(playlists);
+	var title  = ChannelData[0]['title'];
+	initializeSidebar(newpl);
+});
 
+function registerHandlebarHelpers()
+{
+	Handlebars.registerHelper('if_eq', function(a, b, opts) {
+    if(a == b) // Or === depending on your needs
+        return opts.fn(this);
+    else
+        return opts.inverse(this);
+	});	
+}
+
+
+function sortPl(playlists)
+{
 	var newpl = playlists.sort(function(first, second) {
 	    var a = first.title;
 	    var b = second.title;
@@ -18,17 +38,13 @@ $(document).ready(function() {
 	    }
 	});	
 
-	Handlebars.registerHelper('if_eq', function(a, b, opts) {
-    if(a == b) // Or === depending on your needs
-        return opts.fn(this);
-    else
-        return opts.inverse(this);
-	});
+	return newpl;
+}
 
-	var title  = ChannelData[0]['title'];
+function initializeSidebar(newpl)
+{
 	var map = {};
-
-
+	
 	$('#sidebar').w2sidebar
 	({
 			name: 'sidebar',
@@ -49,14 +65,13 @@ $(document).ready(function() {
 
     		map[newpl[i].id] = newpl[i];
 	}
+}
 
-});
 
 
 function PopulateVideos(event, map) 
 {
     var pl = map[event.target]
-	//alert(pl.id);
 
 	var videos = JSON.parse(JSON.stringify({"video": pl.videos}));    
 	var theTemplateScript = $("#card-template").html();
@@ -72,68 +87,22 @@ function PopulateVideos(event, map)
 
 }
 
-function exportData(ChannelData)
+
+function exportDataTemplate()
 {
-
-	var playlists = ChannelData[0]['playlists'];
-
-	var newpl = playlists.sort(function(first, second) {
-	    var a = first.title;
-	    var b = second.title;
-	    
-	    if(a > b) {
-	        return 1;
-	    } else if(a < b) {
-	        return -1;
-	    } else {
-	        return 0;
-	    }
-	});	
-
-
-	var html = [];
+	var playlists = JSON.parse(JSON.stringify({"playlists": newpl}));    
+	var theTemplateScript = $("#export-template").html();
+    
+    // Compile the template
+  	var theTemplate = Handlebars.compile(theTemplateScript);
+    // This is the default context, which is passed to the template
+  	var context = playlists;
 	
-	html.push(
-	  "<html>",
-	  "<body>"
-	);
-
-
-	for( var i=0, l=newpl.length; i<l; i++ ) 
-	{
-    	html.push("<b>" + newpl[i].title + "</b> <ul type = \"circle\">");	
-    	var videos = newpl[i].videos;
-
-    	for( var j=0, len=videos.length; j<len; j++ ) 
-		{	
-			
-			var title = videos[j].title;
-			title = title.toLowerCase();
-
-			if (title != "deleted video" ) {
-    			html.push("<li><a href=https://www.youtube.com/watch?v="+ videos[j].id + "  target=\"_blank\">" + videos[j].title + "</a></li>");	
-			}
-			else
-			{
-				html.push("<li><font color=\"red\">Deleted Video</font><a href=https://www.google.co.in/search?q="+ videos[j].id + " target=\"_blank\">" + videos[j].id + "</a></li>");		
-			}				
-		}
-
-		html.push("</ul><br/><br/>");	
-	}
-
-	html.push(
-		"</body>",
-		"</html>"
-	);
-
-
-	html =  html.join("");
-	
-	var blob = new Blob([html], {type: "text/plain;charset=utf-8"});
+	// Pass our data to the template
+    var theCompiledHtml = theTemplate(context);
+	var blob = new Blob([theCompiledHtml], {type: "text/plain;charset=utf-8"});
 	saveAs(blob, "Channels.html");
 }
-
 
 
 
