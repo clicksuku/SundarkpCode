@@ -27,8 +27,8 @@ Dependencies mentioned in requirements.txt and bower.json installed.
 
 ## Demo ##
 
-### Page displaying Playlists and its videos ###
-![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/Youtube%20Channels.png "Youtube Playlister")
+#### Page displaying Playlists and its videos ####
+<img src="https://github.com/clicksuku/SundarkpCode/blob/master/Images/Youtube%20Channels.png" alt="Youtube Playlister" style="height: 200px;width: 200px;"/>
 
 ### Export Page with Videos ###
 ![alt text](https://github.com/clicksuku/SundarkpCode/blob/master/Images/Youtube%20Exported%20Playlist.png "Youtube Playlister Exported")
