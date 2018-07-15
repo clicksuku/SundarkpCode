@@ -1,9 +1,9 @@
-INDIR="/Users/sundarkp/Documents/Personal/My Photos"
-CPVIDEODIR="/Users/sundarkp/Documents/Personal/_ResizeVideos/Videos"
+INDIR="[PHOTOSDIR]"
+CPVIDEODIR="[RESIZEDVIDEOSDIR]"
 OUTDIR="/"
 
-VIDEOLOG="/Users/sundarkp/Documents/Personal/_ResizeVideos/_vdo.log"
-IMGLOG="/Users/sundarkp/Documents/Personal/_ResizeVideos/_img.log"
+VIDEOLOG="[LOGDIR]/_vdo.log"
+IMGLOG="[LOGDIR]/_img.log"
 
 tmpfile=$(find "$INDIR" -name "*.vdi" -o -name "*.mov" -o -name "*.mp4" -type f -print0 -exec du -h {} +  | sort -rh | head -225 | cut -f2)	
 

@@ -1,8 +1,9 @@
-INDIR="/Users/sundarkp/Documents/Personal/My Photos"
-CPIMAGEDIR="/Users/sundarkp/Documents/Personal/_ResizeVideos/Images"
+INDIR="[PHOTOSDIR]"
+CPVIDEODIR="[RESIZEDVIDEOSDIR]"
 OUTDIR="/"
 
-IMAGELOG="/Users/sundarkp/Documents/Personal/_ResizeVideos/_image.log"
+IMGLOG="[LOGDIR]/_img.log"
+
 tmpfile=$(find "$INDIR" -name "*.jpg" -type f -print0 -exec du -h {} +  | sort -rh |  cut -f2)	
 
 ERROR="errorfile.txt"

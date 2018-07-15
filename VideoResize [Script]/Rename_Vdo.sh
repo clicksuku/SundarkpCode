@@ -1,4 +1,5 @@
-INDIR="/Users/sundarkp/Documents/Personal/My Photos"
+INDIR="[PHOTOSDIR]"
+
 tmpfile=$(find "$INDIR" -name "Copy_*"  -type f)	
 
 echo $tmpfile
