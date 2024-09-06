@@ -1,0 +1,13 @@
+sources:
+- description: Dataframes Mage upstream blocks
+  loader: mage
+  name: mage_skp_olist_data_dbt
+  schema: olist
+  tables:
+  - description: Dataframe for block `gcsbuckettobq` of the `skpdezolist` mage pipeline.
+    identifier: mage_skpdezolist_gcsbuckettobq
+    meta:
+      block_uuid: gcsbuckettobq
+      pipeline_uuid: skpdezolist
+    name: skpdezolist_gcsbuckettobq
+version: 2
