@@ -1,0 +1,6 @@
+pyspark==3.5.1
+pandas==2.2.1
+dask[dataframe]
+dlt
+dlt[duckdb]
+kaggle

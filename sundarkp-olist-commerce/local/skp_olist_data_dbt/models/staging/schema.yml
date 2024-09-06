@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: staging
+    database:  <Project ID>
+    schema: <Schema ID>
+    
+    tables:
+      - name: olist_customers_dataset
+
+      - name: olist_orders_dataset
+
+      - name: olist_order_items_dataset
+
+      - name: olist_products_dataset
+
+      - name: product_category_name_translation
+
+      - name: olist_sellers_dataset
+
+      - name: olist_order_payments_dataset
+
+
