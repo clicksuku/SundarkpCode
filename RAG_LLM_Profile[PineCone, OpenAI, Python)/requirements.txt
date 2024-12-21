@@ -1,0 +1,6 @@
+langchain==0.3.12  #RAG Framework
+langchain-community==0.3.12 #RAG Framework
+openai==1.57.4 #LLM
+pinecone==5.4.2  # Vector DB
+pypdf==5.1.0 #PDF Loader
+sentence-transformers==3.3.1 #Transformers required for embeddings
