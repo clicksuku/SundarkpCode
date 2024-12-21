@@ -1,4 +1,5 @@
-Privacy Policy for Rediff Viewer
+**Privacy Policy for Rediff Viewer
+**
 
 Privacy Policy
 Last updated: December 21, 2024
