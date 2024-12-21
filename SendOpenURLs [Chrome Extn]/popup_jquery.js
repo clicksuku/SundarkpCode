@@ -133,7 +133,7 @@ function SendGMail()
 	var msg = CleanMessage(gContents);
 	
 	sendGmail({
-		to: 'clicksuku@gmail.com',
+		to: 'a@gmail.com',
 		subject: 'List of URLs',
 		message: msg
 	});	

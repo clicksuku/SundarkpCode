@@ -1,16 +1,17 @@
 {
    "name": "Send Open URLs",
    "description": "This extension sends open URLs to GMail.",   
-   "browser_action": {
+   "action": {
       "default_icon": "icon.png",
 	  "default_title": "Send Open URLs",	  
       "default_popup": "popup.html"
    },
-   "manifest_version": 2,     
+   "manifest_version": 3,     
    "update_url"		: "http://clients2.google.com/service/update2/crx",
-   "version": "1.0",   
+   "version": "2.0",   
    "icons"				: {				
 		"128": "icon.png" 
 	},   
-   "permissions": [ "tabs", "https://*.googleapis.com/*", "https://mail.google.com/*", "https://*.google.com/*" ]   
+   "host_permissions": ["*://*.googleapis.com/*", "*://mail.google.com/*", "*://*.google.com/*" ],
+   "permissions": [ "tabs"]
 }
