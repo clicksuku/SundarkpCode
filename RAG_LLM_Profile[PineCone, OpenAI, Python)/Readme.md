@@ -19,7 +19,7 @@ o	Pinecone is the vector database and it requires API key.
 
 **Code**
 
-[Github Link](https://github.com/clicksuku/SundarkpCode/blob/master/RAG_LLM_Profile%5BPineCone%2C%20OpenAI%2C%20Python/Skp_RAGApp.py)
+[Github Link](https://github.com/clicksuku/SundarkpCode/blob/master/RAG_LLM_Profile(PineCone,OpenAI,Python)/Skp_RAGApp.py)
 
 
 **Tech Stack**
