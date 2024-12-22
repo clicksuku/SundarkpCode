@@ -15,26 +15,32 @@ The application can be seen working at https://sundarkp.streamlit.com/ (A little
 
 **Concept** 
 
-•	LLM framework provides support for Document Loading, Splitting, creating Embeddings. LangChain Community is the one employed in the application
-
-•	Vectorization is an important element in RAG and LLM. Based on the semantic and structural aspects of words and sentences, the text is transformed into a numerical representation and stored in Vector Databases. For instance, Dog and Cat will be closer nodes with stronger weighted connections (as both are pets) than a Dog and a Iron rod. 
-
-    o	For generating vectors, I use HuggingFaceBgeEmbedding trained on bge-large-en-v1.5 language model. The Large Language model, having trained on copious amount of text, is better placed to transform the swarths of text into numerical vectors. 
-    o	Employed Pinecone as the vector database and it requires API key. 
-
-•	Streamlit App was easy to start with and is used for the visualization
+    •	LLM framework provides support for Document Loading, Splitting, creating Embeddings. LangChain Community is the one employed in the application
+    
+    •	Vectorization is an important element in RAG and LLM. Based on the semantic and structural aspects of words and sentences, the text is transformed into a numerical representation and stored in Vector Databases. For instance, Dog and Cat will be closer nodes with stronger weighted connections (as both are pets) than a Dog and a Iron rod. 
+    
+        o	For generating vectors, I use HuggingFaceBgeEmbedding trained on bge-large-en-v1.5 language model. The Large Language model, having trained on copious amount of text, is better placed to transform the swarths of text into numerical vectors. 
+        o	Employed Pinecone as the vector database and it requires API key. 
+    
+    •	Streamlit App was easy to start with and is used for the visualization
 
 
 **Tech Stack**
 
 Vector Database – Pinecone
+
 LLM – OpenAI
+
 LLM/RAG Framework – langchain
+
 Embedding Model – HuggingFaceEmbedding (BAAI/bge-large-en-v1.5)
 
 PDF Parser – PyPDF
+
 Language – Python
 
+
 **Code**
-Github Link
+
+[Github Link](https://github.com/clicksuku/SundarkpCode/blob/master/RAG_LLM_Profile(PineCone%2C%20OpenAI%2C%20Python)/Skp_RAGApp.py)
 
