@@ -1,4 +1,8 @@
 
+# SKPRAGProfile
+
+A RAG enabled LLM against Sundarkp's profile. 
+
 **Overview**
 
 With an increased interest in Gen AI, LLM and RAG all around, my attempt to implement a RAG application enhanced by LLM. 
@@ -43,4 +47,36 @@ Language – Python
 **Code**
 
 [Github Link](https://github.com/clicksuku/SundarkpCode/blob/master/RAG_LLM_Profile(PineCone%2C%20OpenAI%2C%20Python)/Skp_RAGApp.py)
+
+
+**References**
+
+***Articles***
+
+https://www.dailydoseofds.com/a-crash-course-on-building-rag-systems-part-2-with-implementations/ 
+https://dev.to/rogiia/how-to-build-a-basic-rag-app-h9p
+Videos
+https://www.youtube.com/watch?v=1y2TohQdNbo&t=65s 
+https://www.youtube.com/watch?v=1y2TohQdNbo&t=65s 
+
+***Chat Models***
+https://python.langchain.com/docs/integrations/chat/ 
+
+***Embeddings***
+
+https://zilliz.com/learn/enhancing-information-retrieval-learned-sparse-embeddings#Summary 
+https://medium.com/@zilliz_learn/exploring-bge-m3-and-splade-two-machine-learning-models-for-generating-sparse-embeddings-0772de2c52a7 
+
+**Vector Databases**
+
+***Pinecone***
+https://python.langchain.com/docs/integrations/retrievers/self_query/pinecone/
+https://docs.llamaindex.ai/en/stable/examples/vector_stores/PineconeIndexDemo/ 
+
+***FAISS***
+https://medium.com/@ahmed.mohiuddin.architecture/using-ai-to-chat-with-your-documents-leveraging-langchain-faiss-and-openai-3281acfcc4e9
+
+***Milvus***
+https://github.com/milvus-io/bootcamp/tree/master
+
 
