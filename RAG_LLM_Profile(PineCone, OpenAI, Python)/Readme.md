@@ -10,7 +10,7 @@ With an increased interest in Gen AI, LLM and RAG all around, my attempt to impl
 
 The application loads my profile (which is in PDF), vectorizes it, stores it in a Vector DB. The queries run against the vector DB. The result is set as context for the conversation with LLM (OpenAI) and responses are generated.  
 
-The application can be seen working at https://sundarkp.streamlit.com/ (A little slow as it is hosted on Streamlit Community Cloud)
+The application can be seen working at https://sundarkp.streamlit.app (A little slow as it is hosted on Streamlit Community Cloud)
 
 **High Level Design**
   
