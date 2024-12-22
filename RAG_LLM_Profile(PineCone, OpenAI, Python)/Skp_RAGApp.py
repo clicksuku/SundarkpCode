@@ -1,8 +1,5 @@
 # pip install sentence_transformers PyPDF langchain langchain_community
-# pip install streamlit
-# To install ollama - Downloaded the Application from the site and installed Command line tools
-# Milvus Client was very ok in Vector Search
-# Trying Pinecone now
+# pip install streamlit pinecone
 
 import hashlib
 import streamlit as st
