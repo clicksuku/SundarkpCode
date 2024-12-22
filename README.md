@@ -4,7 +4,7 @@ This repository contains the utilities, which I wrote to address few problems I 
 
 # Utilities Inside #
 
-+ [RAG_LLM_Profile(PineCone, OpenAI, Python)](https://github.com/clicksuku/SundarkpCode/tree/master/RAG_LLM_Profile(PineCone%2C%20OpenAI%2C%20Python)) - [Read me](https://github.com/clicksuku/SundarkpCode/blob/master/RAG_LLM_Profile(PineCone%2C%20OpenAI%2C%20Python)/Readme.md) 
+  + [RAG_LLM_Profile(PineCone, OpenAI, Python)](https://github.com/clicksuku/SundarkpCode/tree/master/RAG_LLM_Profile(PineCone%2C%20OpenAI%2C%20Python)) - [Read me](https://github.com/clicksuku/SundarkpCode/blob/master/RAG_LLM_Profile(PineCone%2C%20OpenAI%2C%20Python)/Readme.md) 
   + [Data Engineering Zoomcamp - CapStone Project - Sundarkp-Olist-Commerce (MAGE AI, GCP, TERRAFORM, BIGQUERY)](https://github.com/clicksuku/SundarkpCode/blob/master/sundarkp-olist-commerce) - [Read me](https://github.com/clicksuku/SundarkpCode/blob/master/sundarkp-olist-commerce/README.md) - [Notes](DataEngineering Certification Course/Sundarkp Data Engineering Zoomcamp.pdf)
   + [SendOpenURLs  (Chrome Extension)](https://github.com/clicksuku/SundarkpCode/tree/master/SendOpenURLs%20%5BChrome%20Extn%5D) - [Read me](https://github.com/clicksuku/SundarkpCode/blob/master/SendOpenURLs%20%5BChrome%20Extn%5D/Readme.md), [Demo](http://www.youtube.com/watch?feature=player_embedded&v=i3Cxm4Xi6TM), [Download](https://chrome.google.com/webstore/detail/send-open-urls/ohapipgmanomnljkmlkainclgblifagk)
   + [YoutubePlaylister      (Python DJango Project)](https://github.com/clicksuku/SundarkpCode/blob/master/YoutubePlayLister%5BPython%20Django%5D) - 
