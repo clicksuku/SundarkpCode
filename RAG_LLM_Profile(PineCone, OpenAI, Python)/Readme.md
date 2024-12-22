@@ -9,8 +9,10 @@ The application loads my profile (which is in PDF), vectorizes it, stores it in 
 
 The application can be seen working at https://sundarkp.streamlit.com/ (A little slow as it is hosted on Streamlit Community Cloud)
 
-
+**High Level Design**
   
+  <img src="../Images/RAG.png">
+
 **Concept** 
 
 •	LLM framework provides support for Document Loading, Splitting, creating Embeddings. LangChain Community is the one employed in the application
