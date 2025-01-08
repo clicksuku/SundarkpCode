@@ -1,14 +1,14 @@
 {
-   "name": "Send Open URLs",
-   "description": "This extension sends open URLs to GMail.",   
+   "name": "e-Send Open URLs",
+   "description": "This extension leverages E-Mail to sync open URLs to another device",   
    "action": {
       "default_icon": "icon.png",
-	  "default_title": "Send Open URLs",	  
+	  "default_title": "e-Send Open URLs",	  
       "default_popup": "popup.html"
    },
    "manifest_version": 3,     
    "update_url"		: "http://clients2.google.com/service/update2/crx",
-   "version": "2.0",   
+   "version": "3.0",   
    "icons"				: {				
 		"128": "icon.png" 
 	},   
