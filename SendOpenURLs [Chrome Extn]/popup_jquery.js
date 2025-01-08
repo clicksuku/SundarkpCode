@@ -154,13 +154,16 @@ function StripTheURL(url)
 	return desiredURL;
 }
 
+function BeamTab(url)
+{
+	chrome.tabs.create({url: url, windowId: chrome.windows.WINDOW_ID_CURRENT});
+}
+
 function BeamItOnChrome(URLList)
 {
 	for(var i=0;i< URLList.length; i++)
 	{	
-		//alert(URLList[i]);
-		//chrome.windows.create({url: URLList[i], type: "normal"});
-		window.open(URLList[i], '_blank');
+		BeamTab(URLList[i]);
 	}
 }
 
@@ -181,7 +184,6 @@ function OpenBeamedURLs()
 	
 	var beamURLsList = textAreaText.split("\n\n");	
 	var URLList = beamURLsList.map(StripTheURL);
-	
 	BeamItOnChrome(URLList);	
 }
 
