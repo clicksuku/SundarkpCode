@@ -60,21 +60,21 @@ function PickURLS()
 	$("#url-list_ta").css('visibility','hidden');
 	$("#url_list_cbs").css('visibility','visible');	
 	
-	$("#eventSelected").text("GMail");
+	$("#eventSelected").text("e-Send URLs");
 	
 	chrome.tabs.query({'windowId': chrome.windows.WINDOW_ID_CURRENT},list);    	
 }
 
 function BeamURLS()
 {		
-	$('#alertmsg').text("Please paste the URLs you want to Beam!!");
+	$('#alertmsg').text("Please paste the URLs you want to Open. And please do not modify the text or spacing!!");
 	$("#alert").removeClass("alert-success").removeClass("alert-error").addClass("alert-info");
 	
 	$("#alert").css('visibility','visible');	
 	$("#url-list_ta").css('visibility','visible');
 	$("#url_list_cbs").css('visibility','hidden');	
 	
-	$("#eventSelected").text("Beam");
+	$("#eventSelected").text("Open URLs");
 }
 
 $(document).ready(function() {	
@@ -111,6 +111,15 @@ $("#eventSelected").click(function(){
 	}
 });
 
+function getCurrentDate()
+{
+	var date = new Date();
+	const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+	let val=date.getDate()+" "+ months[date.getMonth()]+" "+date.getFullYear();
+	return val;
+}
+
 
 function SendGMail()
 {
@@ -133,8 +142,8 @@ function SendGMail()
 	var msg = CleanMessage(gContents);
 	
 	sendGmail({
-		to: 'a@gmail.com',
-		subject: 'List of URLs',
+		to: 'someeone@gmail.com',
+		subject: 'List of URLs - '+getCurrentDate(),
 		message: msg
 	});	
 }
@@ -173,7 +182,7 @@ function OpenBeamedURLs()
 	if(textAreaText.length === 0)
 	{
 		$("#alert").removeClass("alert-info").addClass("alert-error");
-		$("#alertmsg").text("Please fill some URLs to beam");
+		$("#alertmsg").text("Please fill some URLs to Open");
 		return;
 	}
 	else
