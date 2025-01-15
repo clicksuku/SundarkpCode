@@ -847,7 +847,7 @@
       "resolved": "https://registry.npmjs.org/graceful-readlink/-/graceful-readlink-1.0.1.tgz"
     },
     "grunt": {
-      "version": "1.5.3",
+      "version": "1.0.1",
       "from": "grunt@>=1.0.1 <1.1.0",
       "resolved": "https://registry.npmjs.org/grunt/-/grunt-1.0.1.tgz",
       "dependencies": {

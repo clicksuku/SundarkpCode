@@ -1,5 +1,4 @@
-from google import google
-
+from googlesearch import search
 
 class GoogleSearch(object):
 	def __init__(self):
@@ -9,7 +8,7 @@ class GoogleSearch(object):
 		print ("Searching for Video")
 		query = "wiMMtFW5NyM	"
 		num_page = 2
-		search_results = google.search(query, num_page)
+		search_results = search.search(query, num_page)
 		print (search_results)		
 
 	def FindAlternativeVId():

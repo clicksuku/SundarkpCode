@@ -76,10 +76,10 @@
 					<br/>
 					{{#playlists}}
 					<b>{{title}}</b>	
-					<ul type = "circle">		
+					<ol type = "1"> 
 						{{#videos}}
 							{{#if_eq  title "Deleted video"}}
-								<li>
+								<li>	
 									<font color="red">Deleted Video - </font>
 									<a href="https://www.google.co.in/search?q={{id}}" target=\"_blank\">{{id}}</a> 
 								</li>
@@ -90,7 +90,7 @@
 								</li>
 							{{/if_eq}}
 						{{/videos}}	
-					</ul>	
+					</ol>	
 					{{/playlists}}
 				</body>
 				</html>

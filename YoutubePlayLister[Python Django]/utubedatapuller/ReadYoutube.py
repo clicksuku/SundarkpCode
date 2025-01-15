@@ -1,7 +1,7 @@
-from Channel import Channel
-from Playlist import Playlist
-from Video import Video
-from Authenticator import *
+from utubedatapuller.Authenticator import *
+from utubedatapuller.Video import Video
+from utubedatapuller.Playlist import Playlist
+from utubedatapuller.Channel import Channel
 
 from django.conf import settings
 
@@ -30,9 +30,9 @@ class ReadYoutube:
 
 		Playlists = []
 		for item in playlists_response["items"]:
-	 		Playlists.append(Playlist(item["id"],item["snippet"]["title"], None))
+			Playlists.append(Playlist(item["id"],item["snippet"]["title"], None))
 
-		return	Playlists
+		return Playlists
 
 
 	def videos_by_pl(self, youtube, pl_id):
@@ -60,7 +60,7 @@ class ReadYoutube:
 					defUrl = thumbnails["default"]["url"]
 					medUrl = thumbnails["medium"]["url"]
 					Videos.append(Video(vidId,title, desc, plid, defUrl, medUrl))
-				except KeyError, e:
+				except KeyError as e:
 					defUrl = "/static/images/404.jpg"
 					Videos.append(Video(vidId,title, desc, plid, defUrl, None))	
 					pass
@@ -69,17 +69,13 @@ class ReadYoutube:
 
 		return	Videos
 
-
- 	def channels_with_videos(self, youtube):
+	def channels_with_videos(self, youtube):
 		channels = self.channels_list_by_id(youtube)
 		for channel in channels:
-	 		playlists =  self.playlists_by_channel(youtube,channel.id)
+			playlists = self.playlists_by_channel(youtube,channel.id)
 			channel.playlists = playlists
 			for pl in playlists:
 				videos = self.videos_by_pl(youtube,pl.id)
 				pl.videos = videos
 		
-		return channels		
-
-	
-
+		return channels
