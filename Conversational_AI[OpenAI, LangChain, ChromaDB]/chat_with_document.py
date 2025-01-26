@@ -10,29 +10,79 @@ from langchain.chains import (
     ConversationalRetrievalChain
 )
 
-from utils.load_data import load_documents
+from utils.load_data import load_process_docs
 from utils.vectorize_data import vectorize
-from utils.text_to_audio import convertToAudio
+
+async def solicit_inputs():
+    #inputs = dict()
+    keys = ["urls","files"]
+    filePaths = []
+    urls = []
+
+    res = await cl.AskActionMessage(
+        content="Pick an Input!",
+        actions=[
+            cl.Action(name="url", payload={"value": "url"}, label="✅ URL"),
+            cl.Action(name="file", payload={"value": "file"}, label="✅ File"),
+            cl.Action(name="done", payload={"value": "done"}, label="❌ done"),
+        ],
+        ).send()
+    
+    while res:
+        match res.get("payload").get("value"):
+            case "url":
+                urlVal = await cl.AskUserMessage(
+                    content="Enter a Valid URL:\n", 
+                    timeout=180).send()
+                if urlVal:
+                    url = urlVal['output']
+                    urls.append(url)
+                    await cl.Message(content="URL is :" + url).send()
+                    await cl.Message(content="Urls is :" + ','.join(urls)).send()
+            case "file":
+                files = await cl.AskFileMessage(
+                    content="Please upload a text or file to begin!",
+                    accept=["text/plain", "application/pdf"],
+                    max_size_mb=20,
+                    timeout=180,
+                ).send()
+
+                file = files[0]
+                filePaths.append(file.path)
+                await cl.Message(content="File Name is :" + file.path).send()
+                await cl.Message(content="File Name is :" + ','.join(filePaths)).send()
+            case "done":
+                vals = []
+                
+                vals.append(urls)
+                vals.append(filePaths)
+                inputs = dict(zip(keys,vals))
+                return inputs
+        
+        res = await cl.AskActionMessage(
+            content="Pick an Input!",
+            timeout=180,
+            actions=[
+                cl.Action(name="url", payload={"value": "url"}, label="✅ URL"),
+                cl.Action(name="file", payload={"value": "file"}, label="✅ File"),
+                cl.Action(name="done", payload={"value": "done"}, label="❌ done"),
+            ],
+            ).send()
+    
 
 @cl.on_chat_start
 async def on_chat_start():
-    settings = await cl.ChatSettings(
-        [
-            Switch(
-                id="Audio",
-                label="Audio",
-                initial=False
-            )
-        ]
-    ).send()
-    
-    url = "https://sahamati.org.in/"
-    chunks = await load_documents(url)
+    msg = cl.Message(content="Welcome to the Knowledge Base Q&A. You can enter a URL or a file to build your knowledge base against which questions can be posted\n\n")
+    await msg.send()
+
+    inputs = await solicit_inputs()
+    msg = cl.Message(content=f"Processing ...")
+    await msg.send()
+
+    chunks = await load_process_docs(inputs)
     docSearch = await vectorize(chunks=chunks)
 
-    msg = cl.Message(content=f"Processing ...")
     message_history = ChatMessageHistory()
-
     memory = ConversationBufferMemory(
         memory_key="chat_history",
         output_key="answer",
@@ -49,13 +99,11 @@ async def on_chat_start():
         return_source_documents=True,
     )
 
-
     # Let the user know that the system is ready
     msg.content = f"Processing  done. You can now ask questions!"
-    await msg.update()
+    await msg.send()
 
     cl.user_session.set("chain", chain)
-
 
 @cl.on_message
 async def main(message: cl.Message):
@@ -85,13 +133,3 @@ async def main(message: cl.Message):
             answer += "\nNo sources found"
 
     await cl.Message(content=answer, elements=text_elements).send()
-    
-    """ await convertToAudio(answer)
-
-    elements = [
-        cl.Audio(name="Answer", path="./speech.mp3", display="inline"),
-    ]
-    await cl.Message(
-        content="Here is an audio file",
-        elements=elements,
-    ).send() """

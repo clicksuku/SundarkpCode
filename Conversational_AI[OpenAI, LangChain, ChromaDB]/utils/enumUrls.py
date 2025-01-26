@@ -17,7 +17,6 @@ def enumerate_urls(url:str):
     #links = ', '.join(f'"{item}"' for item in unique_urls)
     links = list(unique_urls)
     links = list(filter(lambda word: not word.endswith("pdf"), links))
-    print(links)
     return links
 
-enumerate_urls("https://sahamati.org.in/")
+#enumerate_urls("https://sahamati.org.in/")
