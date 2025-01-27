@@ -1433,9 +1433,9 @@
           "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-2.0.10.tgz"
         },
         "shelljs": {
-          "version": "0.3.0",
-          "from": "shelljs@>=0.3.0 <0.4.0",
-          "resolved": "https://registry.npmjs.org/shelljs/-/shelljs-0.3.0.tgz"
+          "version": "0.8.5",
+          "from": "shelljs@>=0.3.0 <0.8.5",
+          "resolved": "https://registry.npmjs.org/shelljs/-/shelljs-0.8.5.tgz"
         }
       }
     },
@@ -2198,9 +2198,9 @@
       "resolved": "https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.0.1.tgz"
     },
     "shelljs": {
-      "version": "0.7.0",
-      "from": "shelljs@>=0.7.0 <0.8.0",
-      "resolved": "https://registry.npmjs.org/shelljs/-/shelljs-0.7.0.tgz"
+      "version": "0.8.5",
+      "from": "shelljs@>=0.7.0 <0.8.5",
+      "resolved": "https://registry.npmjs.org/shelljs/-/shelljs-0.8.5.tgz"
     },
     "shx": {
       "version": "0.1.2",
