@@ -3,7 +3,7 @@ GEM
   specs:
     addressable (2.8.7)
     colorator (0.1)
-    ffi (1.9.14-x64-mingw32)
+    ffi (1.17.1-x64-mingw32)
     jekyll (4.3.4)
       colorator (~> 0.1)
       jekyll-sass-converter (~> 1.0)
