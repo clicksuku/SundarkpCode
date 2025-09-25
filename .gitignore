@@ -216,3 +216,5 @@ pip-log.txt
 CopyAcrossClientBox[Java]/nbproject/private/private.xml
 
 .DS_Store
+.env
+.gradle
