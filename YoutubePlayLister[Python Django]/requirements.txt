@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Django==4.2.18
 <<<<<<< HEAD
 httplib2==0.19.0
@@ -8,3 +9,9 @@ httplib2==0.22.0
 google_api_python_client==2.159.0
 protobuf==5.29.1
 >>>>>>> master
+=======
+Django==4.2.24
+httplib2==0.22.0
+google_api_python_client==2.159.0
+protobuf==5.29.5
+>>>>>>> 426fc06 (Fixing vulnerabilities)
