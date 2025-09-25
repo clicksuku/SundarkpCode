@@ -1,7 +1,7 @@
-from django.conf.urls import url
+from django.urls import re_path
 from readtube import views
 
 urlpatterns = [
-    url(r'^$', views.HomePageView.as_view()),
-    url(r'^Channels/$', views.ChannelPageView.as_view()),
+    re_path(r'^$', views.HomePageView.as_view()),
+    re_path(r'^Channels/$', views.ChannelPageView.as_view()),
 ]

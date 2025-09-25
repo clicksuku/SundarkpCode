@@ -1,0 +1,10 @@
+name: conversational-bot
+services:
+    chainlit-gcp-image:
+        stdin_open: true
+        tty: true
+        build:
+          dockerfile: Dockerfile
+        ports:
+            - 8000:8000
+        image: chainlit-gcp-image

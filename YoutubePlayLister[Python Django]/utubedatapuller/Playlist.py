@@ -1,7 +1,6 @@
 import os
 import sys
 
-
 class Playlist(object):
 	def __init__(self, playlistId, title, videos):
 		self.id = playlistId

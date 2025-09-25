@@ -1,7 +1,6 @@
 import os
 import sys
 
-
 class Video(object):
 	def __init__(self, videoId, title, desc, plitemId, defthumbnailURL, medthumbnailURL):
 		self.id = videoId

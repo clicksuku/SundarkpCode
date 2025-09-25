@@ -1,7 +1,6 @@
 import os
 import sys
 
-
 class Channel(object):
 	def __init__(self, channelId, channelTitle, playlists):
 		self.id = channelId
