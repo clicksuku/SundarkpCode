@@ -9,7 +9,7 @@ from openai import OpenAI
 
 from fastmcp import Client
 from fastmcp.client.transports import StreamableHttpTransport
-
+from rag.ragSolution import ragSolution
 
 load_dotenv()
 
@@ -93,6 +93,13 @@ async def checkRiskComplianceForCard(cardDetails:str):
         return errorCode.structured_content.get("result")
 
 
+async def rag(error:str):
+    rag = ragSolution()
+    rag.prepare_data()
+    results = await rag.search(error)
+    print(results)
+    return results
+    
 async def main(type:str, details:str):
     if type == "image":
         cardDetails = returnCardDetails_Image(details)
@@ -102,9 +109,14 @@ async def main(type:str, details:str):
     
     print(cardDetails)
     validity= await validateCardDetails(cardDetails)
-    errorCode = await checkRiskComplianceForCard(cardDetails)
-    print(validity)
-    print(errorCode)
+    error = await checkRiskComplianceForCard(cardDetails)
+    print("validity: ", validity)
+    print("error: ", error)
+    rag= ragSolution()
+    await rag.prepare_data()
+    results = await rag.search(error)
+    print(results)
+
 
 if __name__== "__main__":
     parser = argparse.ArgumentParser()

@@ -71,7 +71,7 @@ def isCardActive(expiryDate: str) -> bool:
 
 
 @mcp.tool
-def checkCardErrorCode(cardNumber: str) -> str:
+async def checkCardErrorCode(cardNumber: str) -> str:
     """
     Checks if the card has any risk and compliance limitations
 
