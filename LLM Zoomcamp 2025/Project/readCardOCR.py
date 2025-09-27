@@ -109,16 +109,15 @@ async def main(type:str, details:str,rag:ragSolution):
     
     print(cardDetails)
     validity= await validateCardDetails(cardDetails)
-    error = await checkRiskComplianceForCard(cardDetails)
+    errorDescription = await checkRiskComplianceForCard(cardDetails)
     print("validity: ", validity)
-    print("Risk and Compliance Status: ", error)
-    code = error.split(":")[0]
-    description=error.split(":")[1]
+    print("Risk and Compliance Status: ", errorDescription)
+    code = errorDescription.split(":")[0]
+    description=errorDescription.split(":")[1]
     print("Error Code: ", code)
     print("Error Description: ", description)
-    results = await search(error, rag)
+    results = await search(errorDescription, rag)
     print(results)
-    #return results
 
 async def setupRag():
     rag = ragSolution()
