@@ -11,11 +11,7 @@ OPENAI_BASE_URL=os.getenv("OPENAI_BASE_URL")
 
 from langchain_community.document_loaders import PyPDFDirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_core.documents import Document
-
 from qdrant_client import QdrantClient, models
-from langchain_huggingface import HuggingFaceEmbeddings
-
 
 model_handle = "BAAI/bge-small-en-v1.5"
 EMBEDDING_DIMENSIONALITY = 384
