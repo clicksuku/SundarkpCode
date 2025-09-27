@@ -91,6 +91,7 @@ async def checkRiskComplianceForCard(cardDetails:str):
     cardNumber = card.get("cardNumber")
     async with client:
         errorCode = await client.call_tool("checkCardErrorCode", {"cardNumber": cardNumber})
+        print(errorCode.structured_content.get("result"))
         return errorCode.structured_content.get("result")
 
 
@@ -107,16 +108,16 @@ async def main(type:str, details:str,rag:ragSolution):
     elif type == "csv":
         cardDetails = details
     
-    print(cardDetails)
     validity= await validateCardDetails(cardDetails)
     errorDescription = await checkRiskComplianceForCard(cardDetails)
-    print("validity: ", validity)
-    print("Risk and Compliance Status: ", errorDescription)
     code = errorDescription.split(":")[0]
-    description=errorDescription.split(":")[1]
-    print("Error Code: ", code)
-    print("Error Description: ", description)
+    reason=errorDescription.split(":")[1]
+    description=errorDescription.split(":")[2]
     results = await search(errorDescription, rag)
+    print("validity: ", validity)
+    print("code: ", code)
+    print("reason: ", reason)
+    print("description: ", description)
     print(results)
 
 async def setupRag():
@@ -146,4 +147,6 @@ if __name__== "__main__":
             cardDetails = json.dumps(row)
             print(cardDetails)
             asyncio.run(main(type, cardDetails, rag))
+            input("Press Enter to continue...") # This line pauses execution
+
 
