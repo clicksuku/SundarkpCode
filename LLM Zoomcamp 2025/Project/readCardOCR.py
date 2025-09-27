@@ -2,6 +2,7 @@ import os
 import json 
 import base64
 import argparse
+import csv  
 import asyncio
 
 from dotenv import load_dotenv
@@ -16,18 +17,18 @@ load_dotenv()
 OPENAI_API_KEY=os.getenv("OPENAI_API_KEY")
 OPENAI_BASE_URL=os.getenv("OPENAI_BASE_URL")
 
-def load_card_details(schema_file:str) -> dict:
-    with open(schema_file, "r") as f:
-        return json.load(f)
-
-
 def encode_image_to_base64(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
 
 
-def returnCardDetails_Image(image_path:str):
-    card_schema = load_card_details("cardDetails.schema.json")
+def loadCardDetailsJson(schema_file:str) -> dict:
+    with open(schema_file, "r") as f:
+        return json.load(f)
+
+
+def loadCardDetailsImage(image_path:str):
+    card_schema = loadCardDetailsJson("cardDetails.schema.json")
 
     client = OpenAI(
     api_key=OPENAI_API_KEY,  # this is also the default, it can be omitted
@@ -93,34 +94,57 @@ async def checkRiskComplianceForCard(cardDetails:str):
         return errorCode.structured_content.get("result")
 
 
-async def rag(error:str):
-    rag = ragSolution()
-    rag.prepare_data()
+async def search(error:str, rag:ragSolution):
     results = await rag.search(error)
-    print(results)
     return results
     
-async def main(type:str, details:str):
+async def main(type:str, details:str,rag:ragSolution):
     if type == "image":
-        cardDetails = returnCardDetails_Image(details)
+        cardDetails = loadCardDetailsImage(details)
     elif type == "json":
-        card = load_card_details(details)
+        card = loadCardDetailsJson(details)
         cardDetails = json.dumps(card)
+    elif type == "csv":
+        cardDetails = details
     
     print(cardDetails)
     validity= await validateCardDetails(cardDetails)
     error = await checkRiskComplianceForCard(cardDetails)
     print("validity: ", validity)
-    print("error: ", error)
-    rag= ragSolution()
-    await rag.prepare_data()
-    results = await rag.search(error)
+    print("Risk and Compliance Status: ", error)
+    code = error.split(":")[0]
+    description=error.split(":")[1]
+    print("Error Code: ", code)
+    print("Error Description: ", description)
+    results = await search(error, rag)
     print(results)
+    #return results
 
+async def setupRag():
+    rag = ragSolution()
+    await rag.prepare_data()
+    return rag
 
-if __name__== "__main__":
+"""if __name__== "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--type", type=str, required=True)
     parser.add_argument("--cardDetails", type=str, required=True)
     args = parser.parse_args()
-    asyncio.run(main(args.type, args.cardDetails))
+
+    type = args.type
+    details = args.cardDetails
+    rag = asyncio.run(setupRag())
+    asyncio.run(main(type, details, rag))"""
+
+
+if __name__== "__main__":
+    rag = asyncio.run(setupRag())
+
+    with open("./_transactions/Transactions data.csv", "r") as f:
+        reader = csv.DictReader(f)
+        type="csv"
+        for row in reader:
+            cardDetails = json.dumps(row)
+            print(cardDetails)
+            asyncio.run(main(type, cardDetails, rag))
+

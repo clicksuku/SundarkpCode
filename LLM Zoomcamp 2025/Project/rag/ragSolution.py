@@ -23,6 +23,10 @@ client = QdrantClient("http://localhost:6333/")
 collection_name = "payments-rag"
 
 class ragSolution:
+    async def check_collection_exists(self):
+        return client.collection_exists(collection_name=collection_name)
+
+    
     async def insert_into_qdrant(self, data:list[str]):
         points = []
         id = 0
@@ -79,6 +83,8 @@ class ragSolution:
         return txt_splitters.split_documents(docs)
 
     async def prepare_data(self):
+        if await self.check_collection_exists():
+            return
         chunks = await self.process_documents() #Created document chunks
         chunk_texts =  list(map(lambda d:d.page_content, chunks))
         await self.insert_into_qdrant(chunk_texts)

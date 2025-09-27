@@ -1,9 +1,40 @@
 from fastmcp import FastMCP
 import json
 from datetime import datetime
-from card_errors import get_random_error_code
+import random
 
 mcp = FastMCP("Currency Validating Card Server")
+
+errorCodes = {
+        "01": "Refer to issuer",
+        "02": "Do not honor",
+        "03": "Pick up card (no fraud)",
+        "04": "Pick up card (fraud account)",
+        "05": "Lost card – pick up",
+        "06": "Stolen card – pick up",
+        "07": "Transaction not permitted – card",
+        "08": "Security violation (e.g., CVV/CID mismatch)",
+        "09": "Violation – cannot complete",
+        "10": "Restricted card",
+        "11": "Transaction limit exceeded",
+        "12": "Daily limit exceeded",
+        "13": "Service/MCC not allowed",
+        "14": "Country/region restricted",
+        "15": "MCC restricted",
+        "16": "Monthly limit exceeded",
+        "17": "Weekly limit exceeded",
+        "18": "Contactless limit exceeded",
+        "19": "Below minimum amount",
+        "20": "Above maximum amount",
+    }
+    
+async def get_random_error_code():
+    # Choose a random error and return its human-readable text
+    number = random.randint(1, 20)
+    code = str(number).zfill(2)
+    desc = errorCodes.get(code)
+    value = f"{code}: {desc}" if desc else ""
+    return value
 
 def validateCardNumber(card_number_str: str) -> bool:
     card_number_str = card_number_str.replace(" ", "")  # Remove any spaces
@@ -79,10 +110,11 @@ async def checkCardErrorCode(cardNumber: str) -> str:
         card_number_str (str): The card number string.
 
     Returns:
-        int: returns a random error code
+        str: Returns a string with the random error code and description, e.g. "05: Lost card – pick up"
     """
-    error = get_random_error_code()
-    return error
+    result = await get_random_error_code()
+    print(result)
+    return result
 
 
 if __name__ == "__main__":
