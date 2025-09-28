@@ -12,15 +12,28 @@ from fastmcp import Client
 from fastmcp.client.transports import StreamableHttpTransport
 from rag.ragSolution import ragSolution
 
+import opik
+from opik.integrations.openai import track_openai
+
+
 load_dotenv()
 
 OPENAI_API_KEY=os.getenv("OPENAI_API_KEY")
 OPENAI_BASE_URL=os.getenv("OPENAI_BASE_URL")
 
+opik.configure(use_local=True) # Or True if running Opik locally
+monitoring = os.getenv("ENABLE_MONITORING")
+
 client = OpenAI(
     api_key=OPENAI_API_KEY,  # this is also the default, it can be omitted
     base_url=OPENAI_BASE_URL
     )
+
+if monitoring == "Yes":
+    tracked_client = track_openai(client)
+else:
+    tracked_client = client
+
 
 def encode_image_to_base64(image_path):
     with open(image_path, "rb") as image_file:
@@ -34,7 +47,7 @@ def loadCardDetailsJson(schema_file:str) -> dict:
 
 def loadCardDetailsImage(image_path:str):
     card_schema = loadCardDetailsJson("cardDetails.schema.json")
-    response = client.chat.completions.create(
+    response = tracked_client.chat.completions.create(
         model="gpt-4o-mini",  # Use the mini model
         messages=[
             {
@@ -115,7 +128,7 @@ async def build_prompt(declineCode:str, reason:str, description:str, results:str
 
 
 async def respond_with_llm(prompt, model="gpt-4o-mini"):
-    response = client.chat.completions.create(
+    response = tracked_client.chat.completions.create(
         model=model,
         messages=[{"role": "user", "content": prompt}]
     )
