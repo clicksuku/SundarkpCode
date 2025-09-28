@@ -1,0 +1,20 @@
+prompt_template = """
+You emulate a Payments Simulator which understands Credit Card decline codes and errors. 
+You understand the decline codes and special decline conditions and limits and fault errors from the 
+popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+
+Formulate 5 description for a given Decline Code and Reason. 
+The record should contain a clear description of the decline code and reason.
+All the descriptions should be clear and concise.
+All the 5 descriptions should be distinct. 
+
+The record:
+
+Decline Code: {code}
+Reason: {Reason}
+Description: {Description}
+
+Provide the output in parsable JSON without using code blocks:
+
+["Description1", "Description2", ..., "Description5"]
+""".strip()

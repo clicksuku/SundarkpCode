@@ -18,6 +18,7 @@ EMBEDDING_DIMENSIONALITY = 384
 client = QdrantClient("http://localhost:6333/")
 collection_name = "payments-rag"
 
+
 class ragSolution:
     async def check_collection_exists(self):
         return client.collection_exists(collection_name=collection_name)
@@ -51,7 +52,6 @@ class ragSolution:
             collection_name=collection_name,
             points=points,
         )
-
 
     async def search(self, query, limit=1):
         results = client.query_points(

@@ -1,0 +1,336 @@
+code,Reason,Description,doc_id
+01,Refer to issuer - The issuing bank prevented the transaction without a specific reason,The transaction was blocked by the issuing bank without a detailed explanation.,8edfbb76
+01,Refer to issuer - The issuing bank prevented the transaction without a specific reason,The issuer has declined the transaction request without specifying a reason.,8edfbb76
+01,Refer to issuer - The issuing bank prevented the transaction without a specific reason,The cardholder's bank stopped the transaction but did not provide any specific details.,8edfbb76
+01,Refer to issuer - The issuing bank prevented the transaction without a specific reason,"The transaction was halted by the issuer, requesting that the cardholder contact their bank for more information.",8edfbb76
+01,Refer to issuer - The issuing bank prevented the transaction without a specific reason,"The cardholder's bank intercepted the transaction without giving a particular cause, advising contacting the issuer.",8edfbb76
+02,Refer to issuer (special condition) - The customer's bank prevented the transaction,The transaction was blocked by the customer's bank for further review.,707822ce
+02,Refer to issuer (special condition) - The customer's bank prevented the transaction,The issuer has declined the transaction and requires further action.,707822ce
+02,Refer to issuer (special condition) - The customer's bank prevented the transaction,Authorization failed; please contact your bank to resolve the issue.,707822ce
+02,Refer to issuer (special condition) - The customer's bank prevented the transaction,Your bank needs to be contacted for transaction approval.,707822ce
+02,Refer to issuer (special condition) - The customer's bank prevented the transaction,Transaction denied by bank; further verification needed.,707822ce
+03,Invalid merchant - Merchant not recognized or invalid,The transaction was declined because the merchant information cannot be verified or is incorrect.,815bbc64
+03,Invalid merchant - Merchant not recognized or invalid,The payment attempt failed due to the merchant being either not recognized or having invalid details in the system.,815bbc64
+03,Invalid merchant - Merchant not recognized or invalid,This decline code indicates the merchant account is not valid or has discrepancies that prevent the transaction from processing.,815bbc64
+03,Invalid merchant - Merchant not recognized or invalid,"The merchant associated with this transaction is not recognized, leading to a decline of the payment.",815bbc64
+03,Invalid merchant - Merchant not recognized or invalid,"Invalid merchant details were detected, causing the transaction to be rejected.",815bbc64
+04,Pick up card (no fraud) - Bank wants merchant to hold the card (overdrawn/expired),"The transaction is declined, and the bank requests the merchant to keep the card due to it being overdrawn or expired.",7d0bab4b
+04,Pick up card (no fraud) - Bank wants merchant to hold the card (overdrawn/expired),The issuing bank has rejected the transaction and has asked the merchant to retain the physical card because it is overdrawn or expired.,7d0bab4b
+04,Pick up card (no fraud) - Bank wants merchant to hold the card (overdrawn/expired),Decline initiated by the bank; merchant is advised to confiscate the card to prevent further transactions as the card is either overdrawn or expired.,7d0bab4b
+04,Pick up card (no fraud) - Bank wants merchant to hold the card (overdrawn/expired),"The card issuer has declined the transaction and instructs the merchant to take the card, indicating a non-fraud issue like an expired or overdrawn card.",7d0bab4b
+04,Pick up card (no fraud) - Bank wants merchant to hold the card (overdrawn/expired),"Bank declines transaction and alerts merchant to hold card, not due to fraud, but because the card may be overdrawn or has expired.",7d0bab4b
+05,Do not honor - Bank told merchant not to accept the card,The transaction was declined by the bank with instructions to the merchant not to honor the card.,89d93e2c
+05,Do not honor - Bank told merchant not to accept the card,The issuing bank instructed the merchant not to accept the card for this transaction.,89d93e2c
+05,Do not honor - Bank told merchant not to accept the card,The card issuer prevented the transaction and advised the merchant against honoring the card.,89d93e2c
+05,Do not honor - Bank told merchant not to accept the card,"The bank's response was a refusal to authorize the transaction, instructing the merchant not to proceed.",89d93e2c
+05,Do not honor - Bank told merchant not to accept the card,"Card acceptance was denied by the bank, which told the merchant not to honor its use.",89d93e2c
+06,Error - Unspecified transaction error,The transaction was unsuccessful due to an unspecified error from the issuing bank.,dd438990
+06,Error - Unspecified transaction error,An unknown issue occurred with the transaction that the issuing bank could not identify.,dd438990
+06,Error - Unspecified transaction error,The transaction failed because the issuing bank encountered an unspecified problem.,dd438990
+06,Error - Unspecified transaction error,The bank processing this transaction reported an error without detailing the specific cause.,dd438990
+06,Error - Unspecified transaction error,An undetermined error from the issuing bank led to the transaction not being processed.,dd438990
+07,Pick up card (fraud) - Card flagged as fraudulent,Description1: The transaction has been declined as the card is marked as fraudulent and should not be used.,347e8267
+07,Pick up card (fraud) - Card flagged as fraudulent,"Description2: The issuing bank has identified the card as suspicious, resulting in a transaction denial.",347e8267
+07,Pick up card (fraud) - Card flagged as fraudulent,"Description3: Due to fraud alerts associated with this card, the transaction was blocked by the bank.",347e8267
+07,Pick up card (fraud) - Card flagged as fraudulent,"Description4: The card has been reported for fraudulent use, prompting the bank to refuse this payment.",347e8267
+07,Pick up card (fraud) - Card flagged as fraudulent,"Description5: This card is suspected of unauthorized activity, leading to a decline in the transaction attempt.",347e8267
+08,Pick up card (fraud) - Card flagged as fraudulent,"The transaction was declined as the card has been reported for fraudulent activity, and the issuer requests retrieval of the card.",e687da44
+08,Pick up card (fraud) - Card flagged as fraudulent,Decline due to suspicion of fraud: the card issuer advises collecting the card from the cardholder.,e687da44
+08,Pick up card (fraud) - Card flagged as fraudulent,Card has been marked for fraud: the issuer requires the card to be picked up immediately.,e687da44
+08,Pick up card (fraud) - Card flagged as fraudulent,"The card is considered fraudulent by the issuer, leading to a decline and a request to take the card.",e687da44
+08,Pick up card (fraud) - Card flagged as fraudulent,Issuing bank has identified the card as compromised; transaction denied with instructions to confiscate the card.,e687da44
+09,Pick up card (fraud) - Card flagged as fraudulent,The card has been identified as compromised; retrieve the card from the user.,86af3cbc
+09,Pick up card (fraud) - Card flagged as fraudulent,Card flagged for suspicious activity; cardholder should not use it further.,86af3cbc
+09,Pick up card (fraud) - Card flagged as fraudulent,The card is reported for fraudulent transactions; confiscate immediately.,86af3cbc
+09,Pick up card (fraud) - Card flagged as fraudulent,Retrieve the card from the holder due to potential fraudulent behavior.,86af3cbc
+09,Pick up card (fraud) - Card flagged as fraudulent,Card marked as fraudulent; it should be confiscated from the cardholder.,86af3cbc
+10,Partial approval - Bank accepts partial payment but blocks the rest,Description1: The transaction is approved only for a portion of the total amount due to insufficient available credit or funds as determined by the bank.,e8294cff
+10,Partial approval - Bank accepts partial payment but blocks the rest,"Description2: The issuer has authorized a part of the transaction amount, blocking the remainder possibly because of a credit limit constraint.",e8294cff
+10,Partial approval - Bank accepts partial payment but blocks the rest,"Description3: The payment is partially processed with the remaining amount declined, likely due to hitting the credit or account limit.",e8294cff
+10,Partial approval - Bank accepts partial payment but blocks the rest,"Description4: Only a fraction of the payment request is approved by the bank, with the rest being denied, often because of limited funds.",e8294cff
+10,Partial approval - Bank accepts partial payment but blocks the rest,"Description5: The card issuer approves a segment of the transaction value but holds back approval for the rest, possibly due to balance limitations.",e8294cff
+12,Invalid transaction - Transaction type is invalid,The transaction you're trying to perform is not recognized as a valid type.,52a4690a
+12,Invalid transaction - Transaction type is invalid,This transaction type cannot be processed and is deemed invalid.,52a4690a
+12,Invalid transaction - Transaction type is invalid,The system does not support the type of transaction you attempted.,52a4690a
+12,Invalid transaction - Transaction type is invalid,The attempted transaction type is not allowed or recognized by the issuer.,52a4690a
+12,Invalid transaction - Transaction type is invalid,Your transaction was declined as the specified type is invalid for processing.,52a4690a
+13,Invalid amount - Invalid transaction amount entered,The transaction was declined due to an incorrect amount being submitted.,d3038aac
+13,Invalid amount - Invalid transaction amount entered,The payment could not be processed as the amount specified was invalid.,d3038aac
+13,Invalid amount - Invalid transaction amount entered,Your transaction has been rejected because the entered amount is not valid.,d3038aac
+13,Invalid amount - Invalid transaction amount entered,The request was unsuccessful since the transaction amount was incorrect.,d3038aac
+13,Invalid amount - Invalid transaction amount entered,"The specified amount for this transaction was deemed invalid, leading to a decline.",d3038aac
+14,Invalid account number - Card number is invalid,The entered card number is not valid.,27b50250
+14,Invalid account number - Card number is invalid,Invalid card number: please check and re-enter.,27b50250
+14,Invalid account number - Card number is invalid,The card number provided is incorrect.,27b50250
+14,Invalid account number - Card number is invalid,Card number does not match any valid account.,27b50250
+14,Invalid account number - Card number is invalid,The account number entered is invalid.,27b50250
+15,No such issuer - First digit identifies wrong issuing bank,The initial digit of the card number points to an invalid issuing bank.,79d85d68
+15,No such issuer - First digit identifies wrong issuing bank,The card number starts with a digit that does not correspond to any known bank.,79d85d68
+15,No such issuer - First digit identifies wrong issuing bank,"The first digit of the card number is incorrect, indicating a non-existent issuing bank.",79d85d68
+15,No such issuer - First digit identifies wrong issuing bank,"An error was detected in the first digit of the card number, which should identify the issuing bank.",79d85d68
+15,No such issuer - First digit identifies wrong issuing bank,The first numeral of the card's number sequence incorrectly identifies a bank that does not exist.,79d85d68
+19,Re-enter transaction - Unknown error occurred,Transaction failed due to an unspecified error; please try again.,301814f8
+19,Re-enter transaction - Unknown error occurred,An unknown issue has disrupted the transaction; reattempt is recommended.,301814f8
+19,Re-enter transaction - Unknown error occurred,"Unexpected error encountered, prompting a need to re-enter the transaction.",301814f8
+19,Re-enter transaction - Unknown error occurred,The transaction couldn't be processed due to an unidentified error; please retry.,301814f8
+19,Re-enter transaction - Unknown error occurred,"An unknown system error has occurred, requiring the transaction to be re-entered.",301814f8
+21,No action taken,Transaction attempted but not processed; no action was taken by the issuer.,12a0f421
+21,No action taken,The payment request did not trigger any response or action from the card issuer.,12a0f421
+21,No action taken,The card issuer received the query but chose not to proceed with any transaction action.,12a0f421
+21,No action taken,Attempted transaction was ignored or not acted upon by the issuer.,12a0f421
+21,No action taken,"Payment process initiated, but the issuer did not engage in any processing action.",12a0f421
+25,Unable to locate record in file,"The system could not find a matching record for the provided account details, resulting in a transaction decline.",5e8ebc9f
+25,Unable to locate record in file,The transaction was declined because the account information could not be matched with existing records.,5e8ebc9f
+25,Unable to locate record in file,"A record for the transaction could not be located in the system's database, leading to a decline.",5e8ebc9f
+25,Unable to locate record in file,The payment was declined as the system was unable to find a corresponding account record.,5e8ebc9f
+25,Unable to locate record in file,A missing account record in the file caused the transaction to be declined.,5e8ebc9f
+28,File temporarily unavailable,The transaction could not be processed because the required file is temporarily inaccessible.,b99acfad
+28,File temporarily unavailable,"File needed for transaction verification is currently unavailable, leading to a transaction denial.",b99acfad
+28,File temporarily unavailable,"The system was unable to access the necessary file, causing the transaction to be declined.",b99acfad
+28,File temporarily unavailable,"Due to a temporary file access issue, the transaction request has been denied.",b99acfad
+28,File temporarily unavailable,Transaction declined because essential file services are momentarily out of reach.,b99acfad
+30,Format error,The transaction could not be processed due to an incorrect data format in the request.,8a6489af
+30,Format error,"A format error occurred, indicating the information sent was improperly structured.",8a6489af
+30,Format error,The payment attempt failed due to a formatting issue with the provided data.,8a6489af
+30,Format error,The transaction was declined because the data format did not adhere to the required standards.,8a6489af
+30,Format error,A processing error was encountered as the input data was not in the expected format.,8a6489af
+41,"Lost card, pick up - Card reported lost",The transaction has been declined because the card was marked as lost by its owner and needs to be recovered.,11586e4d
+41,"Lost card, pick up - Card reported lost","This decline code indicates that the card has been reported as lost, and the issuer has blocked all transactions.",11586e4d
+41,"Lost card, pick up - Card reported lost",Transaction denied as the card has been identified as lost by the cardholder.,11586e4d
+41,"Lost card, pick up - Card reported lost",The card issuer has refused the transaction due to the card being reported lost by its owner.,11586e4d
+41,"Lost card, pick up - Card reported lost","The cardholder has alerted the bank about a lost card, causing this transaction to be rejected.",11586e4d
+43,"Stolen card, pick up - Card reported stolen","The card has been flagged as stolen by the owner, resulting in a transaction denial from the issuer.",bd18ec87
+43,"Stolen card, pick up - Card reported stolen",Transaction declined because the card is reported stolen; retrieval of the card is advised.,bd18ec87
+43,"Stolen card, pick up - Card reported stolen",The issuer blocked the transaction due to the card being reported as stolen and marked for pick-up.,bd18ec87
+43,"Stolen card, pick up - Card reported stolen",Cardholder reported card as stolen; the transaction cannot be processed and the card should be confiscated.,bd18ec87
+43,"Stolen card, pick up - Card reported stolen","The attempted transaction failed because the card was reported stolen, preventing further use.",bd18ec87
+51,Insufficient funds/over credit limit,The transaction has been denied due to the account exceeding its available credit limit or balance.,7dd28a5a
+51,Insufficient funds/over credit limit,The purchase cannot be completed because sufficient funds are not available or the credit limit has been surpassed.,7dd28a5a
+51,Insufficient funds/over credit limit,This card transaction is blocked as the account balance is insufficient or the credit limit has already been exceeded.,7dd28a5a
+51,Insufficient funds/over credit limit,The card issuer has declined the transaction since it would exceed the allowed credit limit or the account balance is too low.,7dd28a5a
+51,Insufficient funds/over credit limit,Transaction failed because the permissible credit limit is breached or the funds in the account are insufficient.,7dd28a5a
+52,No current account,The transaction was declined because the associated account is not a current account.,951ab063
+52,No current account,The payment cannot be processed as the cardholder does not have an active current account.,951ab063
+52,No current account,This decline indicates that the customer does not have a current account linked to their card.,951ab063
+52,No current account,The card issuer has rejected the transaction due to the absence of a current account for this card.,951ab063
+52,No current account,The decline happened because the financial institution does not recognize a current account for this cardholder.,951ab063
+53,No savings account,The transaction was declined because the card associated with the account does not have a linked savings account.,48bda17b
+53,No savings account,Transaction failed due to the absence of a savings account associated with the provided card details.,48bda17b
+53,No savings account,The credit card transaction cannot be processed as there is no savings account linked to the cardholder's account.,48bda17b
+53,No savings account,The payment attempt was unsuccessful because the card does not correspond to any existing savings account.,48bda17b
+53,No savings account,The decline is due to the lack of a savings account connection to the card being used for the transaction.,48bda17b
+54,Expired card,The card has expired as the expiry date is in the past.,efc15766
+54,Expired card,Transaction declined due to card expiration.,efc15766
+54,Expired card,The card cannot be used because its expiration date has lapsed.,efc15766
+54,Expired card,The card's expiration date has been reached and is no longer active.,efc15766
+54,Expired card,Payment cannot be processed as the card is expired.,efc15766
+55,Incorrect PIN,The transaction was declined because the entered PIN does not match the card's expected PIN.,7d638914
+55,Incorrect PIN,"Your PIN entry was incorrect, leading to the card transaction being declined.",7d638914
+55,Incorrect PIN,"The PIN you provided does not match the one on file for this card, resulting in a transaction decline.",7d638914
+55,Incorrect PIN,Transaction blocked: the Personal Identification Number entered is not correct.,7d638914
+55,Incorrect PIN,The card issuer declined this transaction due to an incorrect Personal Identification Number being entered.,7d638914
+57,Transaction not permitted - card,Description1: This decline code indicates that the attempted transaction is not allowed for the type of card being used.,934f62fa
+57,Transaction not permitted - card,Description2: The transaction is being blocked because the card's permissions do not allow this specific type of usage.,934f62fa
+57,Transaction not permitted - card,Description3: This code signifies that the card issuer does not permit this kind of transaction to be processed with the card.,934f62fa
+57,Transaction not permitted - card,Description4: The attempted transaction cannot proceed because it is not permitted by the card's set restrictions.,934f62fa
+57,Transaction not permitted - card,"Description5: This error means that the card is not authorized for this type of transaction, as dictated by the issuer.",934f62fa
+58,Transaction not permitted - terminal,"The terminal's settings may not allow this type of transaction, leading to this error.",e05007eb
+58,Transaction not permitted - terminal,This error occurs if the terminal is not authorized to process the requested transaction type.,e05007eb
+58,Transaction not permitted - terminal,A merchant's terminal may trigger this error if it's restricted from performing the transaction.,e05007eb
+58,Transaction not permitted - terminal,"The terminal configuration may not support this transaction, resulting in a decline code 58.",e05007eb
+58,Transaction not permitted - terminal,Transaction not permitted at terminal indicates the terminal lacks permission for this transaction.,e05007eb
+59,Suspected fraud,Description1: The transaction was declined due to allegations of fraudulent activity on the card.,8323d586
+59,Suspected fraud,"Description2: The card issuer has flagged the transaction as potentially fraudulent, resulting in a decline.",8323d586
+59,Suspected fraud,"Description3: Suspected fraud has triggered a decline for this transaction, as assessed by the card's fraud detection systems.",8323d586
+59,Suspected fraud,Description4: The transaction was rejected because it matched patterns consistent with fraudulent behavior.,8323d586
+59,Suspected fraud,"Description5: Due to a risk of fraud, the card provider declined the transaction to protect the account.",8323d586
+61,Exceeds approval amount limit,The transaction was declined because the requested amount surpasses the card’s approved spending limit.,92ba6c72
+61,Exceeds approval amount limit,The payment could not be processed as it exceeds the maximum authorized amount set for the card.,92ba6c72
+61,Exceeds approval amount limit,"The transaction amount is greater than the cardholder’s permitted limit, resulting in a decline.",92ba6c72
+61,Exceeds approval amount limit,Decline due to transaction request surpassing the capped amount allowed for this card account.,92ba6c72
+61,Exceeds approval amount limit,The purchase has been refused as the charge exceeds the established approval limit for the card.,92ba6c72
+62,Invalid/restricted service code,"Attempted transaction with a card type unsupported by the system, such as American Express or Discover.",21daf4a8
+62,Invalid/restricted service code,Tried to use a card for an online purchase that cannot be used for online transactions.,21daf4a8
+62,Invalid/restricted service code,"The service code on the card does not permit the current transaction attempt, such as a card not supporting e-commerce.",21daf4a8
+62,Invalid/restricted service code,"Transaction failed due to a service code incompatibility with the card issuer, preventing processing of specific card brands.",21daf4a8
+62,Invalid/restricted service code,"Card service restrictions prevent the transaction, possibly due to limitations on conducting online or e-commerce payments.",21daf4a8
+63,Security violation - Incorrect CVV/CVC/CID,"The provided security code (CVV/CVC/CID) does not match the card issuer's records, indicating a potential input error or unauthorized attempt.",76f8d5af
+63,Security violation - Incorrect CVV/CVC/CID,"Transaction declined due to mismatched security code: the CVV, CVC, or CID entered is incorrect.",76f8d5af
+63,Security violation - Incorrect CVV/CVC/CID,"The security code entered (CVV/CVC/CID) failed to verify, leading to a decline for security reasons.",76f8d5af
+63,Security violation - Incorrect CVV/CVC/CID,A discrepancy in the security code (CVV/CVC/CID) provided has resulted in the transaction being blocked.,76f8d5af
+63,Security violation - Incorrect CVV/CVC/CID,"The input for the card's security code does not align with what is on file, triggering a security violation decline.",76f8d5af
+64,Transaction does not fulfil AML requirement,The transaction has been declined because it does not meet the Anti-Money Laundering regulations.,ed372a04
+64,Transaction does not fulfil AML requirement,Your payment was rejected as it failed to satisfy the required Anti-Money Laundering criteria.,ed372a04
+64,Transaction does not fulfil AML requirement,The card transaction was unsuccessful due to non-compliance with Anti-Money Laundering requirements.,ed372a04
+64,Transaction does not fulfil AML requirement,Transaction declined: The payment didn't adhere to Anti-Money Laundering guidelines.,ed372a04
+64,Transaction does not fulfil AML requirement,Payment could not be processed as it did not align with Anti-Money Laundering standards.,ed372a04
+65,Exceeds withdrawal limit,The transaction has been declined because it surpasses the daily withdrawal cap set by the card issuer.,cd60db61
+65,Exceeds withdrawal limit,"The attempted transaction exceeds the withdrawal limit established for this account, resulting in a decline.",cd60db61
+65,Exceeds withdrawal limit,This card cannot process the transaction as it goes over the permitted withdrawal limit.,cd60db61
+65,Exceeds withdrawal limit,"The cardholder's withdrawal restrictions have been exceeded, leading to a declined transaction.",cd60db61
+65,Exceeds withdrawal limit,Transaction denied due to exceeding the maximum allowed withdrawal limit for this credit card.,cd60db61
+70,PIN data required,The transaction has been declined because the PIN data is missing and is required for authorization.,33d6f798
+70,PIN data required,"This card transaction requires a PIN, which was not provided, resulting in a declined authorization.",33d6f798
+70,PIN data required,"The transaction failed as it necessitates a PIN entry, which was not included in the payment request.",33d6f798
+70,PIN data required,Authorization could not be completed due to the absence of mandatory PIN data for this transaction.,33d6f798
+70,PIN data required,The payment was declined because a PIN was expected to be entered but was absent in the transaction attempt.,33d6f798
+71,PIN Not Changed,Description1: The transaction was declined because the cardholder did not update their PIN as required.,0ba5070a
+71,PIN Not Changed,Description2: The credit card was denied due to failure to change the PIN after multiple prompts.,0ba5070a
+71,PIN Not Changed,Description3: The issuer rejected the transaction since the cardholder's PIN remains unchanged.,0ba5070a
+71,PIN Not Changed,Description4: The transaction couldn't be completed because the cardholder hasn't set a new PIN.,0ba5070a
+71,PIN Not Changed,Description5: Decline due to the cardholder's non-compliance with the mandatory PIN update policy.,0ba5070a
+75,Allowable number of PIN entry attempts exceeded,The maximum number of incorrect PIN entries has been reached.,a248e7e2
+75,Allowable number of PIN entry attempts exceeded,Too many failed PIN entry attempts have occurred.,a248e7e2
+75,Allowable number of PIN entry attempts exceeded,The card has been blocked due to excessive incorrect PIN attempts.,a248e7e2
+75,Allowable number of PIN entry attempts exceeded,The allowable limit for incorrect PIN entries has been exceeded.,a248e7e2
+75,Allowable number of PIN entry attempts exceeded,Access denied after reaching the limit of incorrect PIN attempts.,a248e7e2
+76,Invalid/nonexistent 'To Account' specified,The specified destination account for the transaction is either invalid or does not exist.,5f85034a
+76,Invalid/nonexistent 'To Account' specified,The 'To Account' provided for this payment is not recognized or is unavailable.,5f85034a
+76,Invalid/nonexistent 'To Account' specified,Transaction failed due to an invalid or nonexistent destination account number.,5f85034a
+76,Invalid/nonexistent 'To Account' specified,Payment cannot be processed because the specified recipient account is invalid or missing.,5f85034a
+76,Invalid/nonexistent 'To Account' specified,The receiving account entered is either incorrect or does not exist in the system.,5f85034a
+77,Invalid/nonexistent 'From Account' specified,"The 'From Account' is invalid or does not exist, leading to transaction denial.",8f43e8f7
+77,Invalid/nonexistent 'From Account' specified,Transaction declined due to an incorrect or missing source account.,8f43e8f7
+77,Invalid/nonexistent 'From Account' specified,Failure in processing due to a nonexistent or incorrect 'From Account'.,8f43e8f7
+77,Invalid/nonexistent 'From Account' specified,"'From Account' specified is invalid or unable to be found, causing a transaction error.",8f43e8f7
+77,Invalid/nonexistent 'From Account' specified,The transaction couldn't be processed because the 'From Account' is either incorrect or does not exist.,8f43e8f7
+78,"Blocked, first use",The card has been blocked due to it being used for the first time after issuance.,68bf373b
+78,"Blocked, first use",This card is blocked because it has not been activated for its first transaction.,68bf373b
+78,"Blocked, first use","The initial use of this card has been blocked, as it hasn't been authorized for activation.",68bf373b
+78,"Blocked, first use",Blocked transaction: the card hasn't been verified through first use procedures.,68bf373b
+78,"Blocked, first use",The card is blocked until it completes an activation or first-use authorization process.,68bf373b
+79,Already reversed,"The transaction has already been reversed, so further reversal attempts are not necessary.",d4ce5031
+79,Already reversed,Reversal request declined as the transaction was previously reversed.,d4ce5031
+79,Already reversed,This transaction cannot be reversed again because it has already been processed as reversed.,d4ce5031
+79,Already reversed,The reversal operation is redundant; the transaction was already reversed.,d4ce5031
+79,Already reversed,The system indicates that the transaction reversal has already occurred prior to this request.,d4ce5031
+82,"Negative CAM, dCVV, iCVV or CVV results","The card verification value or cryptographic verification failed, resulting in a transaction decline.",99e33a24
+82,"Negative CAM, dCVV, iCVV or CVV results","Security check failed due to negative outcome in CAM, dCVV, iCVV, or CVV validation.",99e33a24
+82,"Negative CAM, dCVV, iCVV or CVV results",Transaction refused because card's security verification parameters returned invalid results.,99e33a24
+82,"Negative CAM, dCVV, iCVV or CVV results",Decline due to unsuccessful verification of card authentication or security codes.,99e33a24
+82,"Negative CAM, dCVV, iCVV or CVV results","Card security check elements like CAM, dCVV, iCVV, or CVV did not pass, causing the transaction to be declined.",99e33a24
+85,No reason to decline,The transaction failed because the card issuer couldn't pinpoint any specific issue.,6bedf38a
+85,No reason to decline,The card was declined without a specific reason provided by the issuer.,6bedf38a
+85,No reason to decline,"The issuer's system did not detect any particular error, yet the payment was unsuccessful.",6bedf38a
+85,No reason to decline,"Despite no apparent reason, the issuer blocked the transaction from proceeding.",6bedf38a
+85,No reason to decline,"The transaction could not be completed, though the issuer did not specify an exact cause of the decline.",6bedf38a
+86,Cannot verify PIN,The transaction was declined because the system could not validate the entered PIN.,c3a46419
+86,Cannot verify PIN,"Verification of the PIN failed, resulting in the transaction being declined.",c3a46419
+86,Cannot verify PIN,"The entered PIN could not be confirmed, leading to a declined transaction.",c3a46419
+86,Cannot verify PIN,The transaction was not approved due to the inability to authenticate the PIN.,c3a46419
+86,Cannot verify PIN,"The PIN provided could not be verified, causing the transaction to be rejected.",c3a46419
+87,"Purchase Amount Only, No Cash Back Allowed",Description1: The transaction was declined because the card issuer does not allow cash back on purchases.,eda61acc
+87,"Purchase Amount Only, No Cash Back Allowed","Description2: This decline indicates that the requested withdrawal exceeds the allowed transaction type, as cash back is not permitted.",eda61acc
+87,"Purchase Amount Only, No Cash Back Allowed","Description3: The transaction failed since only purchase transactions are permitted, and no cash back is allowed.",eda61acc
+87,"Purchase Amount Only, No Cash Back Allowed","Description4: Decline Code 87 means the cardholder attempted a cash back request, which is restricted on this card.",eda61acc
+87,"Purchase Amount Only, No Cash Back Allowed",Description5: The attempted transaction cannot be completed because the card policy prohibits cash back with purchases.,eda61acc
+88,Cryptographic failure,The transaction could not be completed due to an error in the cryptographic processing.,33120bcb
+88,Cryptographic failure,"A failure occurred in the encryption or decryption process, preventing the transaction from being approved.",33120bcb
+88,Cryptographic failure,"The system detected issues with the cryptographic key, resulting in a transaction failure.",33120bcb
+88,Cryptographic failure,An integrity check error in the cryptographic system caused this transaction to be declined.,33120bcb
+88,Cryptographic failure,"The cryptographic security measures failed, leading to a denial of the transaction.",33120bcb
+89,Unacceptable PIN - Retry,The transaction was declined because the PIN entered is invalid. Please retry with the correct PIN.,ebf04a73
+89,Unacceptable PIN - Retry,Declined due to an incorrect PIN entry. Try entering your PIN again.,ebf04a73
+89,Unacceptable PIN - Retry,The payment attempt failed as the PIN provided was not accepted. Re-enter your PIN correctly.,ebf04a73
+89,Unacceptable PIN - Retry,"PIN entry was unsuccessful, resulting in a decline. Please attempt the transaction again with the correct PIN.",ebf04a73
+89,Unacceptable PIN - Retry,Transaction declined because the entered PIN doesn't match the required format. Please retry with the correct PIN.,ebf04a73
+90,Cutoff is in progress,Description1: The transaction cannot be completed because the payment system is undergoing a scheduled cutoff process.,ef038f2b
+90,Cutoff is in progress,Description2: The card issuer is currently processing a cutoff and is unable to authorize transactions at this time.,ef038f2b
+90,Cutoff is in progress,"Description3: A cutoff process is taking place, preventing the approval of the transaction request.",ef038f2b
+90,Cutoff is in progress,"Description4: Due to ongoing cutoff activities, the transaction request cannot be fulfilled right now.",ef038f2b
+90,Cutoff is in progress,Description5: The transaction is declined because the system is in the middle of a cutoff procedure.,ef038f2b
+91,Issuer or switch unavailable,The payment authorization could not be processed due to the issuer or network being temporarily unreachable.,fe1759d6
+91,Issuer or switch unavailable,The transaction could not proceed because the card issuer's systems are currently offline or unable to connect.,fe1759d6
+91,Issuer or switch unavailable,Payment authorization was halted as the card issuer or intermediary network cannot be contacted at this moment.,fe1759d6
+91,Issuer or switch unavailable,"The issuer's or network's service is currently unreachable, disrupting the payment authorization process.",fe1759d6
+91,Issuer or switch unavailable,The transaction is unsuccessful because the issuer or network connection is unavailable at the current time.,fe1759d6
+92,Unable to route transaction,The transaction could not be completed because the payment network could not forward the request to the card issuer.,2879cce9
+92,Unable to route transaction,"The processing pathway to the card issuer is currently unavailable, causing the transaction to fail.",2879cce9
+92,Unable to route transaction,The transaction has been declined due to a failure in reaching the card issuer's system for approval.,2879cce9
+92,Unable to route transaction,A routing issue has prevented the transaction from being forwarded to the card issuer for processing.,2879cce9
+92,Unable to route transaction,The payment request is unable to be processed because the connection to the card issuer could not be established.,2879cce9
+93,Transaction can't be completed - legal violation,"The transaction is declined because there is a legal issue associated with the account, which has restricted its use.",6dd58003
+93,Transaction can't be completed - legal violation,"This decline indicates that the cardholder's account is subject to legal restrictions, preventing transaction completion.",6dd58003
+93,Transaction can't be completed - legal violation,A legal violation linked to the cardholder's account has led to the transaction being denied.,6dd58003
+93,Transaction can't be completed - legal violation,The account associated with this card cannot process transactions due to a detected legal violation.,6dd58003
+93,Transaction can't be completed - legal violation,A legal compliance issue with the cardholder's account has resulted in the transaction being blocked.,6dd58003
+94,Duplicate transaction detected,The system has identified this transaction as a duplicate of a previous one.,f981ddcb
+94,Duplicate transaction detected,This transaction appears to be processed more than once.,f981ddcb
+94,Duplicate transaction detected,Duplicate entry has been detected for this transaction attempt.,f981ddcb
+94,Duplicate transaction detected,The same transaction request has been submitted multiple times.,f981ddcb
+94,Duplicate transaction detected,"An identical transaction was already processed, indicating a duplicate.",f981ddcb
+96,System error,The transaction could not be completed due to a technical problem with the payment system.,e3b06d93
+96,System error,Payment processing failed because of an internal error within the system.,e3b06d93
+96,System error,A system malfunction has caused this transaction to be declined temporarily.,e3b06d93
+96,System error,There is an unexpected system issue affecting the processing of your payment.,e3b06d93
+96,System error,A processing error in the system has led to the decline of this payment request.,e3b06d93
+97,Invalid CVV,Description1: The card verification value provided does not match the information on file with the issuer.,0b7701f4
+97,Invalid CVV,Description2: The CVV number entered is incorrect or does not match what the issuer has on record.,0b7701f4
+97,Invalid CVV,"Description3: The security code submitted is invalid, resulting in a denial of the transaction.",0b7701f4
+97,Invalid CVV,Description4: The entered card verification code is deemed incorrect by the card issuer.,0b7701f4
+97,Invalid CVV,Description5: The CVV given does not match the secure code held by the card issuer.,0b7701f4
+1A,Additional customer authentication required,The transaction was declined because further customer authentication is necessary to proceed.,d967a081
+1A,Additional customer authentication required,"Your card issuer requires additional verification for this transaction, causing the decline.",d967a081
+1A,Additional customer authentication required,This transaction cannot be completed until the cardholder provides more authentication details.,d967a081
+1A,Additional customer authentication required,The payment was not authorized as extra security checks by the cardholder are pending.,d967a081
+1A,Additional customer authentication required,This decline indicates that the transaction needs more customer authentication to be approved.,d967a081
+R0,Recurring charge stopped at customer request,The scheduled recurring transaction was terminated as per the customer's directive.,f3a457ed
+R0,Recurring charge stopped at customer request,"The customer requested cessation of the automatic payment, leading to a decline.",f3a457ed
+R0,Recurring charge stopped at customer request,The automatic charge was halted following a stop request by the account holder.,f3a457ed
+R0,Recurring charge stopped at customer request,A cancellation request from the customer resulted in the decline of this recurring charge.,f3a457ed
+R0,Recurring charge stopped at customer request,"Due to the customer's instruction, the recurring payment was declined and stopped.",f3a457ed
+R1,Recurring charge stopped at customer request,"The customer requested to halt the ongoing recurring payment, resulting in a decline.",27448ea4
+R1,Recurring charge stopped at customer request,Recurring payment was declined because the customer instructed to cease this charge.,27448ea4
+R1,Recurring charge stopped at customer request,Payment was stopped as per the customer's request to discontinue recurring charges.,27448ea4
+R1,Recurring charge stopped at customer request,The repeated transaction was not processed due to a cancellation request from the customer.,27448ea4
+R1,Recurring charge stopped at customer request,Customer-initiated stop on the recurring transaction led to the payment being declined.,27448ea4
+CV,Card type verification error (chip/magnetic strip issue),"There was a malfunction during the verification process, likely due to issues with the card's chip or magnetic strip.",217aedb4
+CV,Card type verification error (chip/magnetic strip issue),"The terminal couldn't successfully read the card, possibly caused by a defect in the chip or magnetic stripe.",217aedb4
+CV,Card type verification error (chip/magnetic strip issue),"An error occurred while attempting to verify the card type, potentially due to a fault in the embedded chip or magnetic strip.",217aedb4
+CV,Card type verification error (chip/magnetic strip issue),"The card's verification failed, possibly because of a problem with the chip or magnetic strip's functionality.",217aedb4
+CV,Card type verification error (chip/magnetic strip issue),"The card could not be verified correctly, likely owing to a malfunction in its chip or magnetic stripe.",217aedb4
+W1,Error connecting to bank,"This decline code indicates a failure to establish a connection with the bank, possibly due to a power or service disruption.",4d48060b
+W1,Error connecting to bank,"An inability to connect to the bank, often caused by network or service outages, is denoted by this code.",4d48060b
+W1,Error connecting to bank,"This error signifies that the transaction could not be processed due to connectivity issues with the bank, likely from a service interruption.",4d48060b
+W1,Error connecting to bank,"A code indicating connection trouble with the bank, commonly stemming from power or network service failures.",4d48060b
+W1,Error connecting to bank,"This decline represents failure in reaching the bank's systems, generally resulting from external connectivity problems like outages.",4d48060b
+W2,Error connecting to bank,"The transaction was declined due to a failure in establishing a connection with the bank, possibly due to service interruptions.",874f74c7
+W2,Error connecting to bank,A disruption in communication lines with the bank has resulted in a failed transaction attempt.,874f74c7
+W2,Error connecting to bank,"The payment could not be processed because of a temporary inability to reach the bank server, potentially due to power outages.",874f74c7
+W2,Error connecting to bank,"An error occurred in linking with the bank, leading to a decline in the transaction, likely caused by network issues.",874f74c7
+W2,Error connecting to bank,"Service or power disruptions prevented a successful connection to the bank, resulting in a transaction failure.",874f74c7
+W9,Error connecting to bank,"A technical issue preventing the transaction from reaching the bank, often due to outages.",85e1c889
+W9,Error connecting to bank,Service disruption is hindering the communication pathway to the bank.,85e1c889
+W9,Error connecting to bank,The transaction failed to process as the bank's connection is currently down.,85e1c889
+W9,Error connecting to bank,"Connection to the bank was unsuccessful, potentially due to service or power issues.",85e1c889
+W9,Error connecting to bank,"Temporary connection error with the bank, frequently caused by external outages.",85e1c889
+00,Approved or completed successfully (included for reference),Transaction approved; funds have been successfully authorized.,62cb7407
+00,Approved or completed successfully (included for reference),Payment processed successfully with no issues detected.,62cb7407
+00,Approved or completed successfully (included for reference),Request completed; the transaction has been accepted.,62cb7407
+00,Approved or completed successfully (included for reference),Authorization successful; the transaction is approved.,62cb7407
+00,Approved or completed successfully (included for reference),Payment has been approved and processed without any problems.,62cb7407
+08,Honor with ID,The transaction has been declined and requires the cardholder to present valid identification.,b135f22c
+08,Honor with ID,Approval is contingent upon the cardholder showing ID for verification purposes.,b135f22c
+08,Honor with ID,The card issuer requests the cardholder's ID to complete the transaction.,b135f22c
+08,Honor with ID,The transaction is declined until the cardholder's identity is confirmed with an ID.,b135f22c
+08,Honor with ID,"To proceed with the transaction, the cardholder must provide identification as requested by the issuer.",b135f22c
+1Z,Authorization system or issuer system inoperative,The transaction could not be processed because the authorization or issuer's system is temporarily unavailable.,6bbf96e7
+1Z,Authorization system or issuer system inoperative,Payment declined as the authorization system or the issuer's network is currently down.,6bbf96e7
+1Z,Authorization system or issuer system inoperative,"The card issuer's systems are not responding, resulting in the transaction being declined.",6bbf96e7
+1Z,Authorization system or issuer system inoperative,Transaction failed due to a temporary outage in the issuer's authorization system.,6bbf96e7
+1Z,Authorization system or issuer system inoperative,Authorization failed because the issuer's processing systems are not operational at the moment.,6bbf96e7
+215,Lost/stolen card,The transaction has been denied because the card was reported as lost or stolen to the card issuer.,62dc72fd
+215,Lost/stolen card,"Card issuer has declined the transaction due to a lost or stolen card report, preventing unauthorized use.",62dc72fd
+215,Lost/stolen card,"The cardholder's account is flagged for lost or stolen status, leading to a decline of the transaction attempt.",62dc72fd
+215,Lost/stolen card,"Due to a lost or stolen notification on this card, the issuer has blocked the transaction for security reasons.",62dc72fd
+215,Lost/stolen card,The transaction is not authorized since the card is marked as lost or stolen by the issuing bank.,62dc72fd
+534,"Do not honor, high fraud",The payment was declined due to risk assessment indicating potential fraud on platforms like PayPal or Google Checkout.,fdf5f8a3
+534,"Do not honor, high fraud","Security algorithms on platforms such as PayPal or Google Checkout flagged the transaction as potentially fraudulent, resulting in a denial.",fdf5f8a3
+534,"Do not honor, high fraud",The attempted transaction was rejected by payment processors due to high fraud risk as identified by PayPal or Google Checkout.,fdf5f8a3
+534,"Do not honor, high fraud",This decline indicates that PayPal or Google Checkout's risk evaluation recognized the transaction as having a high chance of fraud.,fdf5f8a3
+534,"Do not honor, high fraud",The payment was not authorized because fraud detection systems on services like PayPal or Google Checkout detected high risk.,fdf5f8a3
+596,Suspected fraud,The card issuer has identified potential fraudulent activity and has rejected the transaction.,3bc8c72c
+596,Suspected fraud,This transaction was declined due to suspicion of fraudulent behavior by the card issuer.,3bc8c72c
+596,Suspected fraud,The transaction could not be processed as the card issuer suspects possible fraud.,3bc8c72c
+596,Suspected fraud,A security alert has prompted the card issuer to refuse the transaction on suspicion of fraud.,3bc8c72c
+596,Suspected fraud,"Due to suspected fraudulent usage, the card issuer has blocked the transaction from proceeding.",3bc8c72c

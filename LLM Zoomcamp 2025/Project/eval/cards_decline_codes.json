@@ -1,0 +1,404 @@
+[
+  {
+    "code": "01",
+    "Reason": "Refer to issuer - The issuing bank prevented the transaction without a specific reason",
+    "Description": "The issuing bank prevented the transaction.",
+    "id": "8edfbb76"
+  },
+  {
+    "code": "02",
+    "Reason": "Refer to issuer (special condition) - The customer's bank prevented the transaction",
+    "Description": "The customer\u2019s bank prevented the transaction.",
+    "id": "707822ce"
+  },
+  {
+    "code": "03",
+    "Reason": "Invalid merchant - Merchant not recognized or invalid",
+    "Description": "Invalid merchant.",
+    "id": "815bbc64"
+  },
+  {
+    "code": "04",
+    "Reason": "Pick up card (no fraud) - Bank wants merchant to hold the card (overdrawn/expired)",
+    "Description": "The customer\u2019s bank prevented the transaction and is also telling the merchant to hold the card. This doesn\u2019t imply fraud, but rather overdrawn cards or expired ones.",
+    "id": "7d0bab4b"
+  },
+  {
+    "code": "05",
+    "Reason": "Do not honor - Bank told merchant not to accept the card",
+    "Description": "The customer\u2019s bank stopped the transaction and told the merchant to 'not honor' the card.",
+    "id": "89d93e2c"
+  },
+  {
+    "code": "06",
+    "Reason": "Error - Unspecified transaction error",
+    "Description": "The issuing bank can\u2019t specify the error, but something went wrong with the transaction.",
+    "id": "dd438990"
+  },
+  {
+    "code": "07",
+    "Reason": "Pick up card (fraud) - Card flagged as fraudulent",
+    "Description": "The customer\u2019s bank stopped the transaction because the card or bank account has been flagged as fraudulent.",
+    "id": "347e8267"
+  },
+  {
+    "code": "08",
+    "Reason": "Pick up card (fraud) - Card flagged as fraudulent",
+    "Description": "",
+    "id": "e687da44"
+  },
+  {
+    "code": "09",
+    "Reason": "Pick up card (fraud) - Card flagged as fraudulent",
+    "Description": "",
+    "id": "86af3cbc"
+  },
+  {
+    "code": "10",
+    "Reason": "Partial approval - Bank accepts partial payment but blocks the rest",
+    "Description": "The issuing bank accepts a part of the payment but blocks the rest, typically due to exceeding the credit limit or funds in the account.",
+    "id": "e8294cff"
+  },
+  {
+    "code": "12",
+    "Reason": "Invalid transaction - Transaction type is invalid",
+    "Description": "The transaction attempted is invalid.",
+    "id": "52a4690a"
+  },
+  {
+    "code": "13",
+    "Reason": "Invalid amount - Invalid transaction amount entered",
+    "Description": "The amount you entered for the transaction was invalid.",
+    "id": "d3038aac"
+  },
+  {
+    "code": "14",
+    "Reason": "Invalid account number - Card number is invalid",
+    "Description": "The card number is invalid.",
+    "id": "27b50250"
+  },
+  {
+    "code": "15",
+    "Reason": "No such issuer - First digit identifies wrong issuing bank",
+    "Description": "The first digit, which identifies the card\u2019s issuing bank, was incorrect.",
+    "id": "79d85d68"
+  },
+  {
+    "code": "19",
+    "Reason": "Re-enter transaction - Unknown error occurred",
+    "Description": "An unknown error occurred.",
+    "id": "301814f8"
+  },
+  {
+    "code": "21",
+    "Reason": "No action taken",
+    "Description": "",
+    "id": "12a0f421"
+  },
+  {
+    "code": "25",
+    "Reason": "Unable to locate record in file",
+    "Description": "",
+    "id": "5e8ebc9f"
+  },
+  {
+    "code": "28",
+    "Reason": "File temporarily unavailable",
+    "Description": "An error occurred during the transaction without the reason specified.",
+    "id": "b99acfad"
+  },
+  {
+    "code": "30",
+    "Reason": "Format error",
+    "Description": "",
+    "id": "8a6489af"
+  },
+  {
+    "code": "41",
+    "Reason": "Lost card, pick up - Card reported lost",
+    "Description": "The card's legitimate owner has reported it lost or stolen, so the card issuer has denied the transaction.",
+    "id": "11586e4d"
+  },
+  {
+    "code": "43",
+    "Reason": "Stolen card, pick up - Card reported stolen",
+    "Description": "The legitimate owner has reported the card as stolen, so the card issuer denied the transaction.",
+    "id": "bd18ec87"
+  },
+  {
+    "code": "51",
+    "Reason": "Insufficient funds/over credit limit",
+    "Description": "The card issuer is blocking the transaction because the account has already exceeded the credit limit, or the pending transaction would put the card over.",
+    "id": "7dd28a5a"
+  },
+  {
+    "code": "52",
+    "Reason": "No current account",
+    "Description": "",
+    "id": "951ab063"
+  },
+  {
+    "code": "53",
+    "Reason": "No savings account",
+    "Description": "",
+    "id": "48bda17b"
+  },
+  {
+    "code": "54",
+    "Reason": "Expired card",
+    "Description": "The expiration date has already passed.",
+    "id": "efc15766"
+  },
+  {
+    "code": "55",
+    "Reason": "Incorrect PIN",
+    "Description": "",
+    "id": "7d638914"
+  },
+  {
+    "code": "57",
+    "Reason": "Transaction not permitted - card",
+    "Description": "This code shows up when you're trying to use a card for a transaction that's specifically not allowed.",
+    "id": "934f62fa"
+  },
+  {
+    "code": "58",
+    "Reason": "Transaction not permitted - terminal",
+    "Description": "If the merchant account connected to the terminal or payment processor is not properly configured, you\u2019ll see this error.",
+    "id": "e05007eb"
+  },
+  {
+    "code": "59",
+    "Reason": "Suspected fraud",
+    "Description": "",
+    "id": "8323d586"
+  },
+  {
+    "code": "61",
+    "Reason": "Exceeds approval amount limit",
+    "Description": "",
+    "id": "92ba6c72"
+  },
+  {
+    "code": "62",
+    "Reason": "Invalid/restricted service code",
+    "Description": "The invalid service code can refer to two specific situations.1: You\u2019re trying to process an American Express or Discover card, but the system doesn\u2019t support those card issuers. 2: You tried to pay for online purchase with a card that doesn\u2019t support online payments.",
+    "id": "21daf4a8"
+  },
+  {
+    "code": "63",
+    "Reason": "Security violation - Incorrect CVV/CVC/CID",
+    "Description": "The three-digit CVV2 or CVC or the four-digit CID security code was incorrect or wasn\u2019t read properly.",
+    "id": "76f8d5af"
+  },
+  {
+    "code": "64",
+    "Reason": "Transaction does not fulfil AML requirement",
+    "Description": "",
+    "id": "ed372a04"
+  },
+  {
+    "code": "65",
+    "Reason": "Exceeds withdrawal limit",
+    "Description": "The credit card user has exceeded the credit limit.",
+    "id": "cd60db61"
+  },
+  {
+    "code": "70",
+    "Reason": "PIN data required",
+    "Description": "",
+    "id": "33d6f798"
+  },
+  {
+    "code": "71",
+    "Reason": "PIN Not Changed",
+    "Description": "",
+    "id": "0ba5070a"
+  },
+  {
+    "code": "75",
+    "Reason": "Allowable number of PIN entry attempts exceeded",
+    "Description": "Allowable number of PIN tries exceeded.",
+    "id": "a248e7e2"
+  },
+  {
+    "code": "76",
+    "Reason": "Invalid/nonexistent 'To Account' specified",
+    "Description": "Invalid/nonexistent 'To Account' specified",
+    "id": "5f85034a"
+  },
+  {
+    "code": "77",
+    "Reason": "Invalid/nonexistent 'From Account' specified",
+    "Description": "Invalid/nonexistent 'From Account' specified",
+    "id": "8f43e8f7"
+  },
+  {
+    "code": "78",
+    "Reason": "Blocked, first use",
+    "Description": "Blocked, first use",
+    "id": "68bf373b"
+  },
+  {
+    "code": "79",
+    "Reason": "Already reversed",
+    "Description": "Already reversed",
+    "id": "d4ce5031"
+  },
+  {
+    "code": "82",
+    "Reason": "Negative CAM, dCVV, iCVV or CVV results",
+    "Description": "Negative CAM, dCVV, iCVV or CVV results",
+    "id": "99e33a24"
+  },
+  {
+    "code": "85",
+    "Reason": "No reason to decline",
+    "Description": "The issuing bank can\u2019t identify a specific problem, but the transaction still didn\u2019t go through.",
+    "id": "6bedf38a"
+  },
+  {
+    "code": "86",
+    "Reason": "Cannot verify PIN",
+    "Description": "Cannot verify PIN",
+    "id": "c3a46419"
+  },
+  {
+    "code": "87",
+    "Reason": "Purchase Amount Only, No Cash Back Allowed",
+    "Description": "",
+    "id": "eda61acc"
+  },
+  {
+    "code": "88",
+    "Reason": "Cryptographic failure",
+    "Description": "",
+    "id": "33120bcb"
+  },
+  {
+    "code": "89",
+    "Reason": "Unacceptable PIN - Retry",
+    "Description": "",
+    "id": "ebf04a73"
+  },
+  {
+    "code": "90",
+    "Reason": "Cutoff is in progress",
+    "Description": "",
+    "id": "ef038f2b"
+  },
+  {
+    "code": "91",
+    "Reason": "Issuer or switch unavailable",
+    "Description": "The terminal or payment processor was unable to complete the payment authorization.",
+    "id": "fe1759d6"
+  },
+  {
+    "code": "92",
+    "Reason": "Unable to route transaction",
+    "Description": "The terminal cannot reach the card issuer to process the transaction.",
+    "id": "2879cce9"
+  },
+  {
+    "code": "93",
+    "Reason": "Transaction can't be completed - legal violation",
+    "Description": "The issuing bank has recognized (or has been informed of) a legal violation on the part of the credit card user, and assets have been frozen.",
+    "id": "6dd58003"
+  },
+  {
+    "code": "94",
+    "Reason": "Duplicate transaction detected",
+    "Description": "Duplicate transaction detected",
+    "id": "f981ddcb"
+  },
+  {
+    "code": "96",
+    "Reason": "System error",
+    "Description": "There\u2019s a temporary issue with the payment processor.",
+    "id": "e3b06d93"
+  },
+  {
+    "code": "97",
+    "Reason": "Invalid CVV",
+    "Description": "Invalid CVV",
+    "id": "0b7701f4"
+  },
+  {
+    "code": "1A",
+    "Reason": "Additional customer authentication required",
+    "Description": "",
+    "id": "d967a081"
+  },
+  {
+    "code": "R0",
+    "Reason": "Recurring charge stopped at customer request",
+    "Description": "Customer asked to stop the recurring payment.",
+    "id": "f3a457ed"
+  },
+  {
+    "code": "R1",
+    "Reason": "Recurring charge stopped at customer request",
+    "Description": "Customer asked to stop the recurring payment.",
+    "id": "27448ea4"
+  },
+  {
+    "code": "CV",
+    "Reason": "Card type verification error (chip/magnetic strip issue)",
+    "Description": "The card reader had a problem verifying the card. This could be an issue with the microchip or the magnet strip.",
+    "id": "217aedb4"
+  },
+  {
+    "code": "W1",
+    "Reason": "Error connecting to bank",
+    "Description": "This can happen because of a power or service outage.",
+    "id": "4d48060b"
+  },
+  {
+    "code": "W2",
+    "Reason": "Error connecting to bank",
+    "Description": "This can happen because of a power or service outage.",
+    "id": "874f74c7"
+  },
+  {
+    "code": "W9",
+    "Reason": "Error connecting to bank",
+    "Description": "This can happen because of a power or service outage.",
+    "id": "85e1c889"
+  },
+  {
+    "code": "00",
+    "Reason": "Approved or completed successfully (included for reference)",
+    "Description": "(Included for reference)",
+    "id": "62cb7407"
+  },
+  {
+    "code": "08",
+    "Reason": "Honor with ID",
+    "Description": "",
+    "id": "b135f22c"
+  },
+  {
+    "code": "1Z",
+    "Reason": "Authorization system or issuer system inoperative",
+    "Description": "",
+    "id": "6bbf96e7"
+  },
+  {
+    "code": "215",
+    "Reason": "Lost/stolen card",
+    "Description": "The real cardholder has reported the card as lost or stolen, and the card issuer blocks the transaction.",
+    "id": "62dc72fd"
+  },
+  {
+    "code": "534",
+    "Reason": "Do not honor, high fraud",
+    "Description": "The transaction failed PayPal or Google Checkout risk modeling.",
+    "id": "fdf5f8a3"
+  },
+  {
+    "code": "596",
+    "Reason": "Suspected fraud",
+    "Description": "Again, the card issuer suspects fraud and has blocked the transaction.",
+    "id": "3bc8c72c"
+  }
+]
