@@ -6,6 +6,11 @@ This project was built to learn and experiment with LLM application patterns:
 
 It ties together OCR-style card parsing via a vision-enabled LLM, card validation and risk checks via an MCP server, semantic retrieval over payments PDFs using Qdrant, and evaluation/monitoring of prompts and model outputs.
 
+# Project Architecture
+
+<img src="https://github.com/clicksuku/SundarkpCode/blob/master/LLM%20Zoomcamp%202025%20Project/_Project%20Images/LLM%20Evaluation%20Project.png" width="540" height="400" border="80" /></a>
+
+
 ## Features
 - **MCP over Streamable HTTP**: Server exposes tools for card validation and risk checks
   - Server: `mcp_server/card_validation_mcp_server.py`
