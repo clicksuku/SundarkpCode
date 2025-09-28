@@ -1,0 +1,36 @@
+﻿name,cardNumber,expiryDate,cvv,scheme,transactionAmount,transactionDate,merchantName,merchantCode,transactionLocation,merchantCategory,timeOfDay,transactionFrequency
+Jonathan Roberts,4683229489943689,09/30,006,VISA,29.98,2025-09-25,Apple Store,5732,San Francisco,CA,Electronics,Evening,Monthly
+Riley King,5151692709079040,09/26,577,MASTERCARD,142.33,2025-09-27,Delta Airlines,4511,Atlanta,GA,Airlines,Afternoon,Occasional
+Jessica Richardson,4656180854775052,09/28,118,VISA,87.66,2025-09-25,Burger King,5814,London,UK,Fast Food,Morning,Weekly
+Zoey Taylor,3528234470002397,09/30,859,JCB,81.21,2025-09-25,Expedia,4722,Bangalore,IN,Travel,Afternoon,Quarterly
+Alexander Lee,5112389110859023,09/30,141,MASTERCARD,37.85,2025-09-13,Target,5311,Chicago,IL,Supermarket,Afternoon,Weekly
+Jessica Richardson,4656180854775052,09/28,118,VISA,35.60,2025-09-20,Home Depot,5200,San Jose,CA,Hardware,Morning,One-Off
+Zoey Taylor,3528234470002397,09/30,859,JCB,203.75,2025-09-20,IKEA,5712,Stockholm,SE,Furniture,Evening,Quarterly                                         
+Jonathan Roberts,4683229489943689,09/30,006,VISA,66.67,2025-09-26,Netflix,4899,Mumbai,IN,Online Streaming,Night,Monthly
+Jessica Richardson,4656180854775052,09/28,118,VISA,15.90,2025-08-21,Uber,4121,New York,NY,Rideshare,Afternoon,Daily
+Zoey Taylor,3528234470002397,09/30,859,JCB,41.90,2025-09-26,Apple Store,5732,San Francisco,CA,Electronics,Evening,One-Off
+Alexander Lee,5112389110859023,09/30,141,MASTERCARD,259.40,2025-09-10,Home Depot,5200,San Jose,CA,Hardware,Evening,Rare
+Riley King,5151692709079040,09/26,577,MASTERCARD,27.66,2025-09-15,Netflix,4899,Mumbai,IN,Online Streaming,Night,Monthly
+Jessica Richardson,4656180854775052,09/28,118,VISA,41.34,2025-09-25,Aldi,5411,Berlin,DE,Grocery,Morning,Weekly
+Jonathan Roberts,4683229489943689,09/30,006,VISA,88.00,2025-09-12,Best Buy,5732,Seattle,WA,Electronics,Afternoon,Monthly
+Zoey Taylor,3528234470002397,09/30,859,JCB,56.39,2025-09-03,Zara,5651,Madrid,ES,Clothing,Morning,Quarterly
+Jessica Richardson,4656180854775052,09/28,118,VISA,267.89,2025-09-07,Apple Store,5732,San Francisco,CA,Electronics,Evening,One-Off
+Alexander Lee,5112389110859023,09/30,141,MASTERCARD,88.99,2025-09-25,Barnes & Noble,5942,Boston,MA,Bookstore,Afternoon,Annual
+Jonathan Roberts,4683229489943689,09/30,006,VISA,105.18,2025-09-02,CVS Pharmacy,5912,Miami,FL,Pharmacy,Morning,Weekly
+Riley King,5151692709079040,09/26,577,MASTERCARD,74.90,2025-09-19,Barnes & Noble,5942,Boston,MA,Bookstore,Evening,Annual
+Zoey Taylor,3528234470002397,09/30,859,JCB,12.50,2025-09-19,Starbucks,5812,Los Angeles,CA,Coffee Shop,Morning,Weekly
+Jessica Richardson,4656180854775052,09/28,118,VISA,80.00,2025-09-22,Walmart,5411,Dallas,TX,Supermarket,Afternoon,Monthly
+Riley King,5151692709079040,09/26,577,MASTERCARD,74.90,2025-09-19,Barnes & Noble,5942,Boston,MA,Bookstore,Evening,Annual
+Zoey Taylor,3528234470002397,09/30,859,JCB,12.50,2025-09-19,Starbucks,5812,Los Angeles,CA,Coffee Shop,Morning,Weekly
+Jessica Richardson,4656180854775052,09/28,118,VISA,80.00,2025-09-22,Walmart,5411,Dallas,TX,Supermarket,Afternoon,Monthly
+Jonathan Roberts,4683229489943689,09/30,006,VISA,47.90,2025-09-06,McDonald's,5814,New York,NY,Fast Food,Night,Weekly
+Riley King,5151692709079040,09/26,577,MASTERCARD,63.21,2025-09-10,paypal.com,4829,San Mateo,CA,Online Payment,Morning,Daily
+Jessica Richardson,4656180854775052,09/28,118,VISA,123.45,2025-09-26,Delta Airlines,4511,Atlanta,GA,Airlines,Afternoon,Occasional
+Zoey Taylor,3528234470002397,09/30,859,JCB,182.60,2025-08-18,Sephora,5977,Paris,FR,Cosmetics,Afternoon,Monthly
+Riley King,5151692709079040,09/26,577,MASTERCARD,199.99,2025-09-24,Expedia,4722,Bangalore,IN,Travel,Night,Quarterly
+Alexander Lee,5112389110859023,09/30,141,MASTERCARD,56.10,2025-09-20,Chick-fil-A,5814,Austin,TX,Fast Food,Afternoon,One-Off
+Jessica Richardson,4656180854775052,09/28,118,VISA,41.34,2025-09-25,Aldi,5411,Berlin,DE,Grocery,Morning,Weekly
+Jonathan Roberts,4683229489943689,09/30,006,VISA,180.67,2025-09-22,Delta Airlines,4511,Atlanta,GA,Airlines,Evening,Occasional
+Riley King,5151692709079040,09/26,577,MASTERCARD,93.88,2025-09-12,Wegmans,5411,Buffalo,NY,Grocery,Afternoon,Weekly
+Alexander Lee,5112389110859023,09/30,141,MASTERCARD,71.22,2025-09-17,Marriott,7011,Orlando,FL,Hotel,Night,Annual
+Zoey Taylor,3528234470002397,09/30,859,JCB,74.52,2025-08-15,Shell Gas,5541,Houston,TX,Fuel Station,Afternoon,Monthly"
