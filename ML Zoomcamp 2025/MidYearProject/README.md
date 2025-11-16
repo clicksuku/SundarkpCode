@@ -276,74 +276,56 @@ pip install jupytext
 
 ### Conversion Commands
 
-**Convert notebook to Python script (percent format)**:
-```bash
-jupytext --to py:percent SKP_MidTerm_Project_Regression.ipynb
-jupytext --to py:percent SKP_MidTerm_Project_Classification.ipynb
-```
-
 **Convert notebook to Python script (light format)**:
 ```bash
 jupytext --to py SKP_MidTerm_Project_Regression.ipynb
 jupytext --to py SKP_MidTerm_Project_Classification.ipynb
 ```
 
-**Alternative using nbconvert**:
-```bash
-jupyter nbconvert --to script SKP_MidTerm_Project_Regression.ipynb
-jupyter nbconvert --to script SKP_MidTerm_Project_Classification.ipynb
-```
-
 ### Output Files
 - `SKP_MidTerm_Project_Regression.py`
 - `SKP_MidTerm_Project_Classification.py`
-
-### Advantages of Jupytext
-- Preserves cell structure with `# %%` markers
-- Maintains markdown comments as docstrings
-- Allows bidirectional conversion (py ↔ ipynb)
-- Better version control compatibility
 
 ---
 
 ## 8. Requirements & Installation
 
-### PIPFile
-```ini
-[[source]]
-url = "https://pypi.org/simple"
-verify_ssl = true
-name = "pypi"
-
-[packages]
-pandas = ">=1.5.0"
-numpy = ">=1.21.0"
-scikit-learn = ">=1.0.0"
-xgboost = ">=1.5.0"
-matplotlib = ">=3.5.0"
-seaborn = ">=0.11.0"
-jupyter = ">=1.0.0"
-jupytext = ">=1.14.0"
-fastapi = ">=0.68.0"
-uvicorn = ">=0.15.0"
-pydantic = ">=1.8.0"
-python-multipart = ">=0.0.5"
-
-[dev-packages]
-pytest = ">=6.0.0"
-black = ">=21.0.0"
-flake8 = ">=3.9.0"
-
-[requires]
-python_version = "3.9"
+### Requirements.txt
+```txt
+pandas
+numpy
+scikit-learn
+scipy
+threadpoolctl
+jupytext
+seaborn
+uv
+xgboost
+fastapi
+requests
+uvicorn
+tqdm
 ```
+
 ### Installation Steps
 ```
-# Using pipenv
-pip install pipenv
-pipenv install
-pipenv shell
+git clone https://github.com/clicksuku/skpmlzoomcamp_course_2025.git
+bash -v setup.sh
+```
 
+### Local Deployment and Run
+```bash
+cd _scripts
+source mlenv/bin/activate
+uvicorn api_model_server:app --host 0.0.0.0 --port 8000
+```
+
+### Local Testing
+```bash
+
+cd _scripts
+source mlenv/bin/activate
+python api_client.py
 ```
 
 ## 9. Docker Deployment
@@ -353,64 +335,35 @@ pipenv shell
 FROM python:3.9-slim
 
 WORKDIR /app
+RUN mkdir -p /app/_models
 
-# Copy requirements and install dependencies
-COPY requirements.txt .
+COPY requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application code
-COPY . .
-COPY _models/ ./_models/
-COPY *.csv ./data/
+COPY *.bin /app/_models/
+COPY *.py /app/
 
-# Create necessary directories
-RUN mkdir -p _models data
-
-# Expose port
-EXPOSE 8000
-
-# Start FastAPI server
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "api_model_server:app", "--host", "0.0.0.0", "--port", "8000"]
 ```
 
-### Docker Compose (docker-compose.yml)
-```yaml
-version: '3.8'
-
-services:
-  movie-ml-api:
-    build: .
-    ports:
-      - "8000:8000"
-    volumes:
-      - ./_models:/app/_models
-      - ./data:/app/data
-    environment:
-      - PYTHONPATH=/app
-    restart: unless-stopped
-
-  # Optional: Add Redis for caching
-  redis:
-    image: redis:alpine
-    ports:
-      - "6379:6379"
-```
 
 ### Deployment Commands
+Go to the path where Dockerfile is present
+
 ```bash
 # Build and run
-docker build -t movie-ml-api .
-docker run -p 8000:8000 movie-ml-api
+docker build -t skpmlzoomcamp .
+docker run -p 8000:8000 skpmlzoomcamp:latest
 
-# Using docker-compose
-docker-compose up -d
-
-# View logs
-docker-compose logs -f
-
-# Stop services
-docker-compose down
 ```
+### Testing
+
+```bash
+cd _scripts
+source mlenv/bin/activate
+python api_client.py
+```
+
 
 ## 10. FastAPI Model Serving & Testing
 
