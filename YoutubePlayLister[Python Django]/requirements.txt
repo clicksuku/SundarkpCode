@@ -1,4 +1,4 @@
-Django==4.2.25
+Django==5.2.8
 httplib2==0.22.0
 google_api_python_client==2.159.0
 protobuf==5.29.5
