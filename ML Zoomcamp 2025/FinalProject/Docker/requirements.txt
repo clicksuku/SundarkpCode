@@ -1,0 +1,17 @@
+pandas
+numpy
+scikit-learn
+scipy
+xgboost
+threadpoolctl
+seaborn
+uv
+xgboost
+fastapi
+requests
+uvicorn
+tqdm
+onnxruntime
+tensorflow
+keras
+python-multipart

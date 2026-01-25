@@ -1,0 +1,16 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+RUN mkdir -p /_models
+
+COPY requirements.txt /app/
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY classification_model.bin /_models/
+COPY regression_model.json /_models/
+COPY cnn_room_classifier_effnet.keras /_models/
+COPY cnn_room_classifier_effnet.onnx /_models/
+
+COPY *.py /app/
+
+CMD ["uvicorn", "api_model_server:app", "--host", "0.0.0.0", "--port", "8000"]

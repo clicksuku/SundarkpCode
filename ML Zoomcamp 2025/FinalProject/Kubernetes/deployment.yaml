@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: airbnb-vienna-deployment
+  labels:
+    app: airbnb-vienna
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: airbnb-vienna
+  template:
+    metadata:
+      labels:
+        app: airbnb-vienna
+    spec:
+      containers:
+      - name: airbnb-model-api
+        image: mlcampfinal:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8000 
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"

@@ -1,0 +1,797 @@
+id,name,input.messages.0.role,input.messages.0.content,output.choices.0.finish_reason,output.choices.0.index,output.choices.0.logprobs,output.choices.0.message.content,output.choices.0.message.refusal,output.choices.0.message.role,output.choices.0.message.annotations,output.choices.0.message.audio,output.choices.0.message.function_call,output.choices.0.message.tool_calls,duration,comments
+01998ec1-aa3f-701c-a8da-f35e4e8b00e3,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 58
+    Reason:  Transaction not permitted - terminal
+
+    CONTEXT: 
+    Description:  If the merchant account connected to the terminal or payment processor is not properly configured, you’ll see this error.
+Search Results: 58
+Transaction not
+permitted –
+Terminal
+If the merchant account
+connected to the terminal or
+payment processor is not properly
+configured, you’ll see this error.
+The merchant needs to call their
+bank to clear things up. If you’re
+the customer, use an alternate
+payment method, like cash or
+check.
+62 Invalid service
+code, restricted
+The invalid service code can refer",stop,0,null,"**Decline Code: 58**  
+**Reason:** Transaction not permitted - terminal  
+
+**Description:** This error occurs when the merchant account linked to the terminal or payment processor is improperly configured. In such cases, the merchant must contact their bank to resolve the issue. For customers facing this decline, it is advisable to use an alternative payment method, such as cash or check.",null,assistant,[],null,null,null,2092.763,
+01998ec1-9fc2-7570-b925-b1bcb3e2ed87,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 76
+    Reason:  Invalid/nonexistent 'To Account' specified
+
+    CONTEXT: 
+    Description:  Invalid/nonexistent 'To Account' specified
+Search Results: 050005 AUTHORIZATION_FAILED Transaction processing suspended 050007 AUTHORIZATION_FAILED Unauthorized access 062000 INVALID_INPUT_FORMAT Value contains invalid character 072000 INVALID_INPUT_LENGTH Invalid length 082000 INVALID_INPUT_VALUE Invalid value 092000 MISSING_REQUIRED_INPUT Value is required 110501 RESOURCE_ERROR Duplicate value",stop,0,null,"Decline Code: 76  
+Reason: Invalid/nonexistent 'To Account' specified  
+Description: This decline code indicates that the account specified as the destination for the transaction (referred to as the 'To Account') is either invalid or does not exist in the system. This may occur due to typographical errors, incorrect account numbers, or attempting to send funds to an account that has been closed or does not exist.",null,assistant,[],null,null,null,1811.181,
+01998ec1-9566-7e5a-a8c8-21165f4c0562,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 10
+    Reason:  Partial approval - Bank accepts partial payment but blocks the rest
+
+    CONTEXT: 
+    Description:  The issuing bank accepts a part of the payment but blocks the rest, typically due to exceeding the credit limit or funds in the account.
+Search Results: 10 Partial approval
+The issuing bank accepts a part
+of the payment but blocks the
+rest, typically due to exceeding
+the credit limit or funds in the
+account.
+Call the bank to clear up the
+issue (and pay down your credit
+if the credit limit is the issue).
+12 Invalid transaction
+The transaction attempted is
+invalid. This could be due to any
+number of faulty operations,",stop,0,null,"**Decline Code: 10**  
+**Reason: Partial approval - Bank accepts partial payment but blocks the rest**  
+**Description:** The issuing bank accepts a part of the payment but blocks the rest, typically due to exceeding the credit limit or insufficient funds in the account. It is advisable to contact the bank to resolve the issue, which may include paying down the credit if the credit limit is the cause.",null,assistant,[],null,null,null,1771.582,
+01998ec1-8ce2-7516-91e8-f988eec550ab,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 89
+    Reason:  Unacceptable PIN - Retry
+
+    CONTEXT: 
+    Description:  
+Search Results: 85: No reason to decline
+86: Cannot verify PIN
+91: Issuer or switch unavailable",stop,0,null,"**Decline Code: 89**  
+**Reason: Unacceptable PIN - Retry**  
+This code indicates that the Personal Identification Number (PIN) entered during the transaction was not acceptable, prompting the user to retry the entry of the correct PIN.",null,assistant,[],null,null,null,1420.366,
+01998ec1-7fa4-7723-a122-03878a4ed47d,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 09
+    Reason:  Pick up card (fraud) - Card flagged as fraudulent
+
+    CONTEXT: 
+    Description:  
+Search Results: Code 7 — Pick up the card, special condition (fraud account):  The card issuer has
+flagged the account for fraud and therefore denied the transaction.",stop,0,null,"**Decline Code: 09**  
+**Reason:** Pick up card (fraud) - Card flagged as fraudulent.  
+
+This decline code indicates that the card issuer has identified the card as potentially fraudulent. Consequently, the transaction is denied to prevent unauthorized use. The account associated with the card has been flagged for fraud, prompting the issuer to advise that the card be retained.",null,assistant,[],null,null,null,2257.964,
+01998ec1-6c74-77db-b922-12ea0041bfb2,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 63
+    Reason:  Security violation - Incorrect CVV/CVC/CID
+
+    CONTEXT: 
+    Description:  The three-digit CVV2 or CVC or the four-digit CID security code was incorrect or wasn’t read properly.
+Search Results: advertises accepting payments
+from your card issuer, you need
+to contact the bank to ask about
+your card’s configuration for
+online payments.
+63 Security violation
+The three-digit CVV2 or CVC or
+the four-digit CID security code
+was incorrect or wasn’t read
+properly.
+Restart the transaction from
+scratch and carefully type the
+correct security code.
+65 Activity limit
+exceeded",stop,0,null,"**Decline Code: 63**  
+**Reason:** Security violation - Incorrect CVV/CVC/CID  
+
+**Description:** This decline code indicates that the three-digit CVV2 or CVC, or the four-digit CID security code provided during the transaction was either incorrect or not readable by the payment system. To resolve this issue, it is advised to restart the transaction and carefully input the correct security code. If problems persist, contacting the card issuer may be necessary to ensure that there are no issues with your card's configuration for online payments.",null,assistant,[],null,null,null,4024.998,
+01998ec1-5b6f-79fa-b8f6-e9f917bd118e,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 93
+    Reason:  Transaction can't be completed - legal violation
+
+    CONTEXT: 
+    Description:  The issuing bank has recognized (or has been informed of) a legal violation on the part of the credit card user, and assets have been frozen.
+Search Results: The issuing bank has recognized
+(or has been informed of) a legal
+violation on the part of the credit
+card user, and assets have been
+frozen.
+If you mistakenly get this error
+code, call the issuing bank right
+away to clear up any issues.
+96 System error There’s a temporary issue with
+the payment processor .
+Restart the transaction. If the
+issue persists, try another credit",stop,0,null,"**Decline Code:** 93  
+**Reason:** Transaction can't be completed - legal violation  
+
+**Description:** This decline code indicates that the issuing bank has identified a legal violation by the credit card user. As a result, assets associated with the account have been frozen, preventing the completion of the transaction. If you encounter this error, it is advisable to contact the issuing bank immediately to resolve any issues related to the legal violation.",null,assistant,[],null,null,null,1892.187,
+01998ec1-4d37-7344-be33-3c783520348f,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 12
+    Reason:  Invalid transaction - Transaction type is invalid
+
+    CONTEXT: 
+    Description:  The transaction attempted is invalid.
+Search Results: 12 – Invalid transaction
+The transaction you’re attempting is invalid — e.g. refunding a refund.
+Make sure you’re transacting the right payment types and double-check that all payment
+batches are correctly configured.
+13 – Invalid amount
+The number field you attempted to transact was invalid. This usually is the result of a typo
+(negative amount or ineligible symbol).",stop,0,null,"Decline Code: 12  
+Reason: Invalid transaction - Transaction type is invalid  
+Description: The transaction attempted is invalid. This could occur in scenarios such as trying to process a refund on a transaction that is not eligible for a refund, or using a transaction type that is not supported. It is important to ensure that the correct payment types are being used and to double-check that all payment batches are properly configured.",null,assistant,[],null,null,null,1844.873,
+01998ec1-25fb-7de6-ab1b-ceef52c8c8fb,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 08
+    Reason:  Honor with ID
+
+    CONTEXT: 
+    Description:  
+Search Results: . ISO Code Description 00 Approved or completed successfully 01 Refer to card issuer 03 Invalid merchant 04 Capture card 05 Do not honor 08 Honor with ID 10 Partial Approval 12 Invalid transaction 13 Invalid amount 14 Invalid card number 15 Invalid issuer 30 Format error 41 Lost card 43 Stolen card 51 Insufficient funds/over credit limit 54 Expired card 55 Invalid PIN 57 Transaction not permitted",stop,0,null,"**Decline Code: 08**  
+**Reason: Honor with ID**
+
+This decline code indicates that the transaction has been declined because the merchant requires the customer to present a form of identification (ID). The card can be processed, but additional verification through ID is necessary to complete the transaction.",null,assistant,[],null,null,null,1546.919,
+01998ec1-184e-78da-9ca1-1cd74e8ce05d,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 06
+    Reason:  Error - Unspecified transaction error
+
+    CONTEXT: 
+    Description:  The issuing bank can’t specify the error, but something went wrong with the transaction.
+Search Results: 19 Re-enter An unknown error occurred.
+Restart the transaction and be
+careful to enter all the
+information correctly. If the
+issue persists, call the card
+issuer.",stop,0,null,"**Decline Code: 06**  
+**Reason: Error - Unspecified transaction error**  
+
+**Description:** This decline code indicates that the issuing bank is unable to specify the exact nature of the error, but something has gone wrong with the transaction. It suggests that there was an unknown error that occurred during the processing of the transaction. 
+
+**Action:** Re-enter the transaction details carefully and ensure that all information is entered correctly. If the problem continues, it is advisable to contact the card issuer for further assistance.",null,assistant,[],null,null,null,2509.939,
+01998ec1-0a34-7685-88d5-3d42c7aef21d,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 02
+    Reason:  Refer to issuer (special condition) - The customer's bank prevented the transaction
+
+    CONTEXT: 
+    Description:  The customer’s bank prevented the transaction.
+Search Results: Code Label The Problem The Fix
+01 Refer to issuer
+The issuing bank (Mastercard,
+Visa, Discovery, etc.) prevented
+the transaction without a specific
+reason.
+Call the bank and ask them to
+explain the issue.
+02 Refer to issuer
+(special condition)
+The customer’s bank prevented
+the transaction (similar to code
+01).
+Use the number on the card to
+call the bank and ask for an
+explanation.
+04",stop,0,null,"**Decline Code: 02**  
+**Reason: Refer to issuer (special condition)**  
+Description: The customer's bank prevented the transaction. This decline code indicates that the issuing bank has blocked the transaction for a specific reason that may not be immediately clear. It is advisable for the cardholder to contact their bank using the phone number provided on the back of their card to seek clarification on the issue. This is similar to decline code 01, but specifically indicates a special condition that prompted the bank's action.",null,assistant,[],null,null,null,2617.765,
+01998ec0-eacd-7c81-9a94-ad6d4fa4b30e,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 86
+    Reason:  Cannot verify PIN
+
+    CONTEXT: 
+    Description:  Cannot verify PIN
+Search Results: 85: No reason to decline
+86: Cannot verify PIN
+91: Issuer or switch unavailable",stop,0,null,"**Decline Code:** 86  
+**Reason:** Cannot verify PIN  
+
+This decline code indicates that the transaction was rejected because the system was unable to verify the Personal Identification Number (PIN) provided by the cardholder. This situation can arise for various reasons, such as incorrect PIN entry, issues with the card reader, or problems with the connection to the issuer's system. As a result, the transaction cannot be completed.",null,assistant,[],null,null,null,2261.926,
+01998ec0-e2c9-75e6-a1df-31a5eb033eca,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 58
+    Reason:  Transaction not permitted - terminal
+
+    CONTEXT: 
+    Description:  If the merchant account connected to the terminal or payment processor is not properly configured, you’ll see this error.
+Search Results: 58
+Transaction not
+permitted –
+Terminal
+If the merchant account
+connected to the terminal or
+payment processor is not properly
+configured, you’ll see this error.
+The merchant needs to call their
+bank to clear things up. If you’re
+the customer, use an alternate
+payment method, like cash or
+check.
+62 Invalid service
+code, restricted
+The invalid service code can refer",stop,0,null,"**Decline Code: 58**  
+**Reason: Transaction not permitted - terminal**
+
+**Description:** This error occurs when the merchant account associated with the terminal or payment processor is not configured correctly. The merchant needs to contact their bank to resolve the issue. For customers encountering this decline, it is advisable to use an alternative payment method, such as cash or check.",null,assistant,[],null,null,null,1142.975,
+01998ec0-d765-7cf2-9175-3861d8b6f5c8,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 01
+    Reason:  Refer to issuer - The issuing bank prevented the transaction without a specific reason
+
+    CONTEXT: 
+    Description:  The issuing bank prevented the transaction.
+Search Results: Code Label The Problem The Fix
+01 Refer to issuer
+The issuing bank (Mastercard,
+Visa, Discovery, etc.) prevented
+the transaction without a specific
+reason.
+Call the bank and ask them to
+explain the issue.
+02 Refer to issuer
+(special condition)
+The customer’s bank prevented
+the transaction (similar to code
+01).
+Use the number on the card to
+call the bank and ask for an
+explanation.
+04",stop,0,null,"**Decline Code: 01**  
+**Reason:** Refer to issuer - The issuing bank prevented the transaction without a specific reason.  
+
+**Description:** The issuing bank, which could be associated with Mastercard, Visa, Discover, etc., has blocked the transaction, but does not provide a specific reason for the decline.  
+**Recommended Action:** It is advisable to call the bank using the number on the back of the card to inquire about the issue and obtain further clarification.",null,assistant,[],null,null,null,2146.848,
+01998ec0-cd0b-7ae5-83b8-7bf1aecb9e44,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 04
+    Reason:  Pick up card (no fraud) - Bank wants merchant to hold the card (overdrawn/expired)
+
+    CONTEXT: 
+    Description:  The customer’s bank prevented the transaction and is also telling the merchant to hold the card. This doesn’t imply fraud, but rather overdrawn cards or expired ones.
+Search Results: explanation.
+04
+Pick up card, hold
+call (no fraud
+implied)
+The customer’s bank prevented
+the transaction and is also telling
+the merchant to hold the card.
+This doesn’t imply fraud, but
+rather overdrawn cards or expired
+ones.
+Call the bank to ask why the
+pick-up notice is showing up for
+your credit card.
+05 Do not honor
+The customer’s bank stopped the
+transaction and told the merchant",stop,0,null,"**Decline Code: 04**  
+**Reason:** Pick up card (no fraud implied) - The customer's bank has prevented the transaction and instructed the merchant to hold the card. This situation does not indicate fraud; it typically arises when the card is overdrawn or expired. The merchant is advised to contact the bank for clarification on why this pick-up notice has been issued for the customer's credit card.",null,assistant,[],null,null,null,1823.991,
+01998ec0-b8a7-749e-88e8-46a5e9cb82e0,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 06
+    Reason:  Error - Unspecified transaction error
+
+    CONTEXT: 
+    Description:  The issuing bank can’t specify the error, but something went wrong with the transaction.
+Search Results: 19 Re-enter An unknown error occurred.
+Restart the transaction and be
+careful to enter all the
+information correctly. If the
+issue persists, call the card
+issuer.",stop,0,null,"**Decline Code: 06**  
+**Reason: Error - Unspecified transaction error**  
+
+**Description:** This decline code indicates that the issuing bank has encountered an error with the transaction but cannot specify the exact nature of the problem. It suggests that something went wrong, but the specifics are not provided.  
+
+**Next Steps:** If you receive this decline code, it is advisable to restart the transaction and ensure that all entered information is correct. If the issue continues, contacting the card issuer for further assistance is recommended.",null,assistant,[],null,null,null,2715.034,
+01998ec0-a65d-7ddf-9a01-2b30f5b39e94,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 10
+    Reason:  Partial approval - Bank accepts partial payment but blocks the rest
+
+    CONTEXT: 
+    Description:  The issuing bank accepts a part of the payment but blocks the rest, typically due to exceeding the credit limit or funds in the account.
+Search Results: 10 Partial approval
+The issuing bank accepts a part
+of the payment but blocks the
+rest, typically due to exceeding
+the credit limit or funds in the
+account.
+Call the bank to clear up the
+issue (and pay down your credit
+if the credit limit is the issue).
+12 Invalid transaction
+The transaction attempted is
+invalid. This could be due to any
+number of faulty operations,",stop,0,null,"**Decline Code: 10**  
+**Reason: Partial approval - Bank accepts partial payment but blocks the rest**  
+**Description:** The issuing bank accepts a part of the payment but blocks the rest, typically due to exceeding the credit limit or insufficient funds in the account. It's advisable to call the bank to resolve the issue, especially if the problem is related to the credit limit.",null,assistant,[],null,null,null,1876.14,
+01998ec0-99f2-703f-a66a-9063ba058989,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 10
+    Reason:  Partial approval - Bank accepts partial payment but blocks the rest
+
+    CONTEXT: 
+    Description:  The issuing bank accepts a part of the payment but blocks the rest, typically due to exceeding the credit limit or funds in the account.
+Search Results: 10 Partial approval
+The issuing bank accepts a part
+of the payment but blocks the
+rest, typically due to exceeding
+the credit limit or funds in the
+account.
+Call the bank to clear up the
+issue (and pay down your credit
+if the credit limit is the issue).
+12 Invalid transaction
+The transaction attempted is
+invalid. This could be due to any
+number of faulty operations,",stop,0,null,"**Decline Code: 10**  
+**Reason: Partial approval - Bank accepts partial payment but blocks the rest**  
+
+**Description:** The issuing bank accepts a part of the payment but blocks the rest, typically due to exceeding the credit limit or insufficient funds in the account. In this situation, it is advisable to contact the bank to resolve the issue, especially if the cause is related to exceeding the credit limit, allowing you to potentially pay down your balance.",null,assistant,[],null,null,null,2271.663,
+01998ec0-8871-76d2-ad4f-cf05b8c92261,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 62
+    Reason:  Invalid/restricted service code
+
+    CONTEXT: 
+    Description:  The invalid service code can refer to two specific situations.1
+Search Results: The invalid service code can refer
+to two specific situations.1: You’re
+trying to process an American
+Express or Discover card, but the
+system doesn’t support those
+card issuers.
+2: You tried to pay for online
+purchase with a card that doesn’t
+support online payments.
+Try a credit card from a different
+issuer, like Visa. If the merchant
+advertises accepting payments",stop,0,null,"**Decline Code: 62**  
+**Reason: Invalid/restricted service code**
+
+The ""Invalid/restricted service code"" decline code can occur in two specific situations:
+
+1. You are attempting to process a payment using an American Express or Discover card, but the payment system does not support these card issuers.
+2. You are trying to make an online purchase using a card that is not authorized for online transactions.
+
+In either case, it is advised to try using a credit card from a different issuer, such as Visa, especially if the merchant advertises acceptance of such payments.",null,assistant,[],null,null,null,2332.364,
+01998ec0-7160-7448-9d49-8a18a6de77a5,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 03
+    Reason:  Invalid merchant - Merchant not recognized or invalid
+
+    CONTEXT: 
+    Description:  Invalid merchant.
+Search Results: The invalid service code can refer
+to two specific situations.1: You’re
+trying to process an American
+Express or Discover card, but the
+system doesn’t support those
+card issuers.
+2: You tried to pay for online
+purchase with a card that doesn’t
+support online payments.
+Try a credit card from a different
+issuer, like Visa. If the merchant
+advertises accepting payments",stop,0,null,"**Decline Code: 03**  
+**Reason:** Invalid merchant - Merchant not recognized or invalid.
+
+The decline code 03 indicates that the transaction has been declined due to the merchant being unrecognized or invalid. This can occur in two specific situations: 
+
+1. The card being used is from American Express or Discover, but the system processing the transaction does not support those card issuers.
+2. The card does not support online payments, which can happen if attempting to make an online purchase with a card that is not authorized for such transactions.
+
+To resolve this issue, it is recommended to try using a credit card from a different issuer, such as Visa, especially if the merchant claims to accept such payments.",null,assistant,[],null,null,null,4102.509,
+01998ec0-676d-7a8e-8bf4-2c438bd6e965,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 59
+    Reason:  Suspected fraud
+
+    CONTEXT: 
+    Description:  
+Search Results: 25: Unable to locate record in file
+28: File temporarily unavailable for update or injury
+41: Lost card, pick up
+43: Stolen card, pick up
+51: Insufficient funds
+52: No current account
+53: No savings account
+54: Expired card
+55: Incorrect PIN
+57: Transaction not permitted – card
+58: Transaction not permitted – terminal
+59: Suspected fraud
+61: Exceeds approval amount limit",stop,0,null,"**Decline Code: 59**  
+**Reason:** Suspected fraud
+
+This decline code indicates that the transaction has been flagged due to potential fraudulent activity. It is a precautionary measure taken by the card issuer to protect the cardholder from unauthorized use of their card.",null,assistant,[],null,null,null,1488.417,
+01998ec0-5c0a-7ea7-8cde-d1f4d84bee53,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 14
+    Reason:  Invalid account number - Card number is invalid
+
+    CONTEXT: 
+    Description:  The card number is invalid.
+Search Results: Simply start the transaction over
+again and be careful to avoid
+using symbols when typing the
+amount.
+14 Invalid card
+number
+The card number is invalid, and
+the credit card processor can’t
+find the related account.
+Start the transaction over again,
+and be careful to enter the digits
+accurately. If the issue persists,
+call the issuing bank.
+15 No such issuer
+The first digit, which identifies the",stop,0,null,"Decline Code: 14  
+Reason: Invalid account number - Card number is invalid
+
+Description: The card number is invalid, and the credit card processor cannot locate the related account. To resolve this, restart the transaction and ensure that all digits of the card number are entered accurately without any symbols. If the issue continues, it is advisable to contact the issuing bank for assistance.",null,assistant,[],null,null,null,1839.154,
+01998ec0-4f9f-71cf-b0d0-605c67d4a661,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 53
+    Reason:  No savings account
+
+    CONTEXT: 
+    Description:  
+Search Results: 25: Unable to locate record in file
+28: File temporarily unavailable for update or injury
+41: Lost card, pick up
+43: Stolen card, pick up
+51: Insufficient funds
+52: No current account
+53: No savings account
+54: Expired card
+55: Incorrect PIN
+57: Transaction not permitted – card
+58: Transaction not permitted – terminal
+59: Suspected fraud
+61: Exceeds approval amount limit",stop,0,null,"**Decline Code: 53**  
+**Reason:** No savings account  
+
+This decline code indicates that the transaction was not processed because the account associated with the payment method does not have a savings account linked. This can occur if the cardholder's account setup only includes a current account without any savings account, which may be required for certain transactions.",null,assistant,[],null,null,null,1844.202,
+01998ec0-419a-734f-915f-277779f7d11e,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 86
+    Reason:  Cannot verify PIN
+
+    CONTEXT: 
+    Description:  Cannot verify PIN
+Search Results: 85: No reason to decline
+86: Cannot verify PIN
+91: Issuer or switch unavailable",stop,0,null,"**Decline Code: 86**  
+**Reason: Cannot verify PIN**  
+
+This decline code indicates that the transaction could not be processed because the system was unable to verify the Personal Identification Number (PIN) provided by the cardholder. This may occur if the PIN is entered incorrectly multiple times or if there is an issue with the communication between the merchant's terminal and the issuer's server regarding the PIN verification process.",null,assistant,[],null,null,null,2156.477,
+01998ec0-35bb-7c55-bf49-b6d93286caa0,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 77
+    Reason:  Invalid/nonexistent 'From Account' specified
+
+    CONTEXT: 
+    Description:  Invalid/nonexistent 'From Account' specified
+Search Results: 050005 AUTHORIZATION_FAILED Transaction processing suspended 050007 AUTHORIZATION_FAILED Unauthorized access 062000 INVALID_INPUT_FORMAT Value contains invalid character 072000 INVALID_INPUT_LENGTH Invalid length 082000 INVALID_INPUT_VALUE Invalid value 092000 MISSING_REQUIRED_INPUT Value is required 110501 RESOURCE_ERROR Duplicate value",stop,0,null,"**Decline Code: 77**  
+**Reason:** Invalid/nonexistent 'From Account' specified
+
+This decline code indicates that the account specified for the transaction does not exist or is invalid. This could be due to the account number being incorrectly entered, the account being closed, or the account not being linked to the transaction processing system. As a result, the authorization for the transaction fails.",null,assistant,[],null,null,null,2122.105,
+01998ec0-221c-777b-a279-d310205def9d,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 21
+    Reason:  No action taken
+
+    CONTEXT: 
+    Description:  
+Search Results: 06: Error
+07: Pick up card (fraud)
+10: Partial approval
+12: Invalid transaction
+13: Invalid amount
+14: Invalid account number
+15: No such issuer
+19: Re-enter transaction
+21: No action taken",stop,0,null,"**Decline Code: 21**  
+**Reason: No action taken**
+
+This decline code indicates that there has been no any action taken on the transaction request. This can occur for a variety of reasons, but generally suggests that the transaction has not been processed or has been left in a pending state without a decision made by the payment network or issuing bank.",null,assistant,[],null,null,null,2032.539,
+01998ec0-17a5-7af1-bf39-63754803fb1b,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 09
+    Reason:  Pick up card (fraud) - Card flagged as fraudulent
+
+    CONTEXT: 
+    Description:  
+Search Results: Code 7 — Pick up the card, special condition (fraud account):  The card issuer has
+flagged the account for fraud and therefore denied the transaction.",stop,0,null,"**Decline Code: 09**  
+**Reason:** Pick up card (fraud) - Card flagged as fraudulent
+
+This decline code indicates that the card has been flagged by the card issuer for potential fraudulent activities. As a result, the transaction cannot be completed, and the cardholder is advised to contact their card issuer for further assistance regarding the status of their card and account. This often necessitates the card being retained to prevent possible unauthorized use.",null,assistant,[],null,null,null,2555.893,
+01998ec0-0dc3-7282-adcd-e6465e0e325c,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 30
+    Reason:  Format error
+
+    CONTEXT: 
+    Description:  
+Search Results: . Examples: INVALID_INPUT_FORMAT, INVALID_INPUT_LENGTH, INVALID_INPUT_VALUE, SYSTEM_ERROR",stop,0,null,"**Decline Code: 30**  
+**Reason: Format error**  
+**Description:** This decline code indicates that there was an issue with the format of the input provided during the transaction process. It could be related to various aspects such as the length of the input (INVALID_INPUT_LENGTH), the type of value provided (INVALID_INPUT_VALUE), or other formatting errors (INVALID_INPUT_FORMAT). The error may arise due to systemic issues as well (SYSTEM_ERROR) that affect the processing of the transaction.",null,assistant,[],null,null,null,2360.325,
+01998ebe-ba49-7d01-bcaf-d0210c95c382,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 41
+    Reason:  Lost card, pick up - Card reported lost
+
+    CONTEXT: 
+    Description:  The card's legitimate owner has reported it lost or stolen, so the card issuer has denied the transaction.
+Search Results: Code 41 — Lost card, pick up (fraud account):  The real owner reported this card as
+lost or stolen, and the card issuer has blocked the transaction.
+Code 43 — Stolen card, pick up (fraud account):  The owner has reported the card
+stolen, and the issuing bank has blocked the transaction.
+Code 215 — Lost/stolen card: The real cardholder has reported the card as lost or",stop,0,null,"Decline Code: 41  
+Reason: Lost card, pick up - Card reported lost  
+
+Description: This decline code indicates that the card's legitimate owner has reported the card as lost or stolen. As a result, the card issuer has denied the transaction to prevent unauthorized use. This action is taken to protect the interests of the cardholder and to mitigate potential fraud.",null,assistant,[],null,null,null,1863.839,
+01998eb7-8cc7-7457-96c0-8af224c69409,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 79
+    Reason:  Already reversed
+
+    CONTEXT: 
+    Description:  Already reversed
+Search Results: . Example: rqst_73HB-5RO5-0OGS-53SG",stop,0,null,"**Decline Code: 79**  
+**Reason: Already reversed**  
+
+This decline code indicates that a transaction has already been reversed, meaning that the payment has been processed to refund or cancel a prior transaction. The transaction cannot be completed again as it is already in a reversed state.",null,assistant,[],null,null,null,2460.55,
+01998eb7-73d9-7438-814c-1bdefb2d7e05,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 05
+    Reason:  Do not honor - Bank told merchant not to accept the card
+
+    CONTEXT: 
+    Description:  The customer’s bank stopped the transaction and told the merchant to 'not honor' the card.
+Search Results: transaction and told the merchant
+to “not honor” the card (not to
+accept payment).
+Call the bank and ask for an
+explanation.
+06 Other error
+The issuing bank can’t specify the
+error, but something went wrong
+with the transaction.
+Try again, and call the bank if
+the issue persists.
+07
+Pick up card,
+special condition
+(fraudulent)
+The customer’s bank stopped the
+transaction because the card or",stop,0,null,"Decline Code: 05  
+Reason: Do not honor - Bank told merchant not to accept the card  
+
+Description: The decline code 05 indicates that the customer's bank has intervened with the transaction, advising the merchant not to honor or accept the card for payment. This suggestion typically stems from a concern raised by the issuing bank regarding the legitimacy or validity of the transaction. In such cases, the merchant is advised to refrain from processing the payment. It is recommended for the customer to contact their bank for further clarification on the reason for the decline.",null,assistant,[],null,null,null,3768.008,
+01998eb7-4cbf-746a-b628-51239b8f9d36,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 93
+    Reason:  Transaction can't be completed - legal violation
+
+    CONTEXT: 
+    Description:  The issuing bank has recognized (or has been informed of) a legal violation on the part of the credit card user, and assets have been frozen.
+Search Results: The issuing bank has recognized
+(or has been informed of) a legal
+violation on the part of the credit
+card user, and assets have been
+frozen.
+If you mistakenly get this error
+code, call the issuing bank right
+away to clear up any issues.
+96 System error There’s a temporary issue with
+the payment processor .
+Restart the transaction. If the
+issue persists, try another credit",stop,0,null,"**Decline Code:** 93  
+**Reason:** Transaction can't be completed - legal violation  
+
+**Description:** The issuing bank has recognized (or has been informed of) a legal violation on the part of the credit card user, resulting in the freezing of assets. If this error code is encountered mistakenly, it's advised to promptly contact the issuing bank to clarify and resolve any issues.",null,assistant,[],null,null,null,1396.523,
+01998eb7-41be-72c8-9376-f99325628c01,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 10
+    Reason:  Partial approval - Bank accepts partial payment but blocks the rest
+
+    CONTEXT: 
+    Description:  The issuing bank accepts a part of the payment but blocks the rest, typically due to exceeding the credit limit or funds in the account.
+Search Results: 10 Partial approval
+The issuing bank accepts a part
+of the payment but blocks the
+rest, typically due to exceeding
+the credit limit or funds in the
+account.
+Call the bank to clear up the
+issue (and pay down your credit
+if the credit limit is the issue).
+12 Invalid transaction
+The transaction attempted is
+invalid. This could be due to any
+number of faulty operations,",stop,0,null,"**Decline Code: 10**  
+**Reason:** Partial approval - Bank accepts partial payment but blocks the rest
+
+**Description:** The issuing bank accepts a part of the payment but blocks the rest, typically due to exceeding the credit limit or insufficient funds in the account. In such cases, it is advisable to call the bank to resolve the issue, particularly if the problem is related to exceeding the credit limit.",null,assistant,[],null,null,null,1603.279,
+01998eb7-33ad-7ca5-aecb-cb2f04bf7712,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 01
+    Reason:  Refer to issuer - The issuing bank prevented the transaction without a specific reason
+
+    CONTEXT: 
+    Description:  The issuing bank prevented the transaction.
+Search Results: Code Label The Problem The Fix
+01 Refer to issuer
+The issuing bank (Mastercard,
+Visa, Discovery, etc.) prevented
+the transaction without a specific
+reason.
+Call the bank and ask them to
+explain the issue.
+02 Refer to issuer
+(special condition)
+The customer’s bank prevented
+the transaction (similar to code
+01).
+Use the number on the card to
+call the bank and ask for an
+explanation.
+04",stop,0,null,"**Decline Code: 01**  
+**Reason: Refer to issuer**  
+**Description:** The issuing bank (Mastercard, Visa, Discover, etc.) prevented the transaction without a specific reason.  
+**Action:** Call the bank and ask them to explain the issue.",null,assistant,[],null,null,null,1826.16,
+01998eb6-9122-7f37-ac06-62684bb084b4,chat_completion_create,user,"You understand the decline codes and special decline conditions and limits and fault errors from the 
+    popular schemes such as VISA, Mastercard, Amex, Discover, JCB, UnionPay, Maestro, Electron, etc.
+    The answer should contain a clear description of the decline code and reason.
+    Use only the facts from the CONTEXT to provide the answer.
+    
+    Decline Code: 96
+    Reason:  System error
+
+    CONTEXT: 
+    Description:  There’s a temporary issue with the payment processor.
+Search Results: The issuing bank has recognized
+(or has been informed of) a legal
+violation on the part of the credit
+card user, and assets have been
+frozen.
+If you mistakenly get this error
+code, call the issuing bank right
+away to clear up any issues.
+96 System error There’s a temporary issue with
+the payment processor .
+Restart the transaction. If the
+issue persists, try another credit",stop,0,null,"**Decline Code: 96**  
+**Reason: System error**  
+**Description:** This decline code indicates that there is a temporary issue with the payment processor. It suggests that the transaction could not be completed due to technical difficulties. If this error occurs, it is recommended to restart the transaction. Should the issue persist, trying another credit card is advisable. Additionally, if you mistakenly receive this error, it's a good idea to contact the issuing bank to resolve any potential issues.",null,assistant,[],null,null,null,3239.113,
