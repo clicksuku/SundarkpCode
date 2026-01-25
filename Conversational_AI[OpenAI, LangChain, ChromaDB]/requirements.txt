@@ -9,5 +9,5 @@ langchain-core==0.3.81
 langchain-experimental==0.3.4
 langchain-openai==0.2.14
 langchain-text-splitters==1.0.0a1
-pypdf==6.4.0
+pypdf==6.6.0
 pypdfium2==4.30.1
