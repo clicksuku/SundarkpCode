@@ -1,5 +1,5 @@
 beautifulsoup4==4.12.3
-chainlit==2.0.4
+chainlit==2.9.4
 chroma-hnswlib==0.7.6
 chromadb==0.5.23
 langchain==0.3.27
