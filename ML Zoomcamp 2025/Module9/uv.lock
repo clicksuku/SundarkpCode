@@ -100,7 +100,7 @@ requires-dist = [
     { name = "numpy", specifier = ">=2.3.5" },
     { name = "onnx", specifier = ">=1.20.0" },
     { name = "onnxruntime", specifier = ">=1.23.2" },
-    { name = "pillow", specifier = ">=12.0.0" },
+    { name = "pillow", specifier = ">=12.1.1" },
     { name = "scikit-learn", specifier = ">=1.7.2" },
 ]
 
